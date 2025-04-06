@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet-async';
+import { useDispatch, useSelector } from 'react-redux';
 import Avatar from '@/components/Avatar/Avatar';
 import AvatarCustomizer from '@/components/Avatar/AvatarCustomizer';
 import AvatarExporter from '@/components/Avatar/AvatarExporter';
+import AvatarShare from '@/components/Avatar/AvatarShare';
+import useQueryParamsSync from '@/hooks/useQueryParamsSync';
+import { selectAvatarOptions } from '@/store/slices/avatarSlice';
 
 const PageContainer = styled.div`
   padding: 2rem 1rem;
@@ -113,17 +117,35 @@ const SectionTitle = styled.h2`
 `;
 
 const AvatarMakerPage: React.FC = () => {
+  // Utilizza l'hook per sincronizzare i query parameters con lo stato Redux
+  useQueryParamsSync();
+  
+  // Ottieni le opzioni dell'avatar dallo store
+  const avatarOptions = useSelector(selectAvatarOptions);
+  
+  // Aggiorna il titolo della pagina con le informazioni sull'avatar corrente
+  useEffect(() => {
+    // Crea una descrizione breve dell'avatar per il titolo
+    const avatarDesc = `${avatarOptions.topType}-${avatarOptions.facialHairType}-${avatarOptions.clotheType}`;
+    document.title = `Avatar Maker | ${avatarDesc}`;
+  }, [avatarOptions]);
+  
   return (
     <PageContainer>
       <Helmet>
         <title>Avatar Maker - Create Your Custom Avatar</title>
         <meta name="description" content="Create your own personalized avatar with our easy-to-use avatar maker tool." />
+        <meta name="robots" content="noindex, follow" />
+        <meta property="og:title" content="Avatar Maker" />
+        <meta property="og:description" content="Create your own personalized avatar and share it with your friends." />
+        <meta property="og:image" content="/avatar-preview.png" />
       </Helmet>
 
       <PageTitle>Avatar Maker</PageTitle>
       <PageDescription>
         Create your own personalized avatar by customizing various features like hairstyle, clothes, 
         accessories, and more. Preview in real-time and download your creation in multiple formats.
+        You can also share your avatar by copying the URL with all your selections saved in the query parameters.
       </PageDescription>
 
       <AvatarMakerContainer>
@@ -133,6 +155,7 @@ const AvatarMakerPage: React.FC = () => {
             <Avatar size={300} />
           </AvatarPreviewContainer>
           <AvatarExporter />
+          <AvatarShare />
         </PreviewSection>
 
         <CustomizationSection>
