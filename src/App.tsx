@@ -9,6 +9,7 @@ import MainLayout from '@/layouts/MainLayout';
 import HomePage from '@/pages/HomePage';
 import AboutPage from '@/pages/AboutPage';
 import NotFoundPage from '@/pages/NotFoundPage';
+import AvatarMakerPage from '@/pages/AvatarMakerPage';
 
 // Import mock service only in development/mock mode
 const isMockMode = import.meta.env.VITE_APP_MOCK_ENABLED === 'true';
@@ -35,7 +36,7 @@ const App: React.FC = () => {
           </Helmet>
           <Routes>
             <Route path="/" element={<MainLayout />}>
-              <Route index element={<HomePage />} />
+              <Route index element={<AvatarMakerPage />} />
               <Route path="about" element={<AboutPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Route>

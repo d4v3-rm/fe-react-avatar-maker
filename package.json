@@ -37,6 +37,8 @@
     "docker:push": "docker tag bl-custom-fe-react:latest 5h1ngy/bl-custom-fe-react:latest && docker push 5h1ngy/bl-custom-fe-react:latest"
   },
   "dependencies": {
+    "@dicebear/collection": "^9.2.2",
+    "@dicebear/core": "^9.2.2",
     "@reduxjs/toolkit": "^2.0.1",
     "axios": "^1.6.2",
     "lodash": "^4.17.21",
