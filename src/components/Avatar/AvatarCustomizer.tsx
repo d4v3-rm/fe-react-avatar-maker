@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
+import { useTranslation } from 'react-i18next';
 import { selectAvatarOptions, updateAvatarOption, resetAvatar } from '@/store/slices/avatarSlice';
 import {
   SKIN_COLORS,
@@ -100,6 +101,7 @@ const ResetButton = styled.button`
 const AvatarCustomizer: React.FC = () => {
   const dispatch = useDispatch();
   const options = useSelector(selectAvatarOptions);
+  const { t } = useTranslation();
 
   const handleOptionChange = (option: string, value: string) => {
     dispatch(updateAvatarOption({ option: option as any, value }));
@@ -149,62 +151,62 @@ const AvatarCustomizer: React.FC = () => {
   return (
     <Container>
       <OptionGroup>
-        <CategoryTitle>Skin Color</CategoryTitle>
+        <CategoryTitle>{t('avatarOptions.skinColor')}</CategoryTitle>
         {renderColorOptions('skinColor', SKIN_COLORS, options.skinColor)}
       </OptionGroup>
 
       <OptionGroup>
-        <CategoryTitle>Hair Style</CategoryTitle>
+        <CategoryTitle>{t('avatarOptions.hairStyle')}</CategoryTitle>
         {renderSelectOptions('topType', TOP_TYPES, options.topType)}
       </OptionGroup>
 
       <OptionGroup>
-        <CategoryTitle>Hair Color</CategoryTitle>
+        <CategoryTitle>{t('avatarOptions.hairColor')}</CategoryTitle>
         {renderColorOptions('hairColor', HAIR_COLORS, options.hairColor)}
       </OptionGroup>
 
       <OptionGroup>
-        <CategoryTitle>Facial Hair</CategoryTitle>
+        <CategoryTitle>{t('avatarOptions.facialHair')}</CategoryTitle>
         {renderSelectOptions('facialHairType', FACIAL_HAIR_TYPES, options.facialHairType)}
       </OptionGroup>
 
       <OptionGroup>
-        <CategoryTitle>Facial Hair Color</CategoryTitle>
+        <CategoryTitle>{t('avatarOptions.facialHairColor')}</CategoryTitle>
         {renderColorOptions('facialHairColor', HAIR_COLORS, options.facialHairColor)}
       </OptionGroup>
 
       <OptionGroup>
-        <CategoryTitle>Eyes</CategoryTitle>
+        <CategoryTitle>{t('avatarOptions.eyes')}</CategoryTitle>
         {renderSelectOptions('eyeType', EYE_TYPES, options.eyeType)}
       </OptionGroup>
 
       <OptionGroup>
-        <CategoryTitle>Eyebrows</CategoryTitle>
+        <CategoryTitle>{t('avatarOptions.eyebrows')}</CategoryTitle>
         {renderSelectOptions('eyebrowType', EYEBROW_TYPES, options.eyebrowType)}
       </OptionGroup>
 
       <OptionGroup>
-        <CategoryTitle>Mouth</CategoryTitle>
+        <CategoryTitle>{t('avatarOptions.mouth')}</CategoryTitle>
         {renderSelectOptions('mouthType', MOUTH_TYPES, options.mouthType)}
       </OptionGroup>
 
       <OptionGroup>
-        <CategoryTitle>Clothes</CategoryTitle>
+        <CategoryTitle>{t('avatarOptions.clothes')}</CategoryTitle>
         {renderSelectOptions('clotheType', CLOTHE_TYPES, options.clotheType)}
       </OptionGroup>
 
       <OptionGroup>
-        <CategoryTitle>Clothes Color</CategoryTitle>
+        <CategoryTitle>{t('avatarOptions.clothesColor')}</CategoryTitle>
         {renderColorOptions('clotheColor', CLOTHE_COLORS, options.clotheColor)}
       </OptionGroup>
 
       <OptionGroup>
-        <CategoryTitle>Accessories</CategoryTitle>
+        <CategoryTitle>{t('avatarOptions.accessories')}</CategoryTitle>
         {renderSelectOptions('accessoriesType', ACCESSORIES_TYPES, options.accessoriesType)}
       </OptionGroup>
 
       <ResetButton onClick={handleReset}>
-        Reset Avatar
+        {t('actions.resetAvatar')}
       </ResetButton>
     </Container>
   );

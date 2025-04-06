@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import ThemeSwitcher from '@/components/ui/ThemeSwitcher';
 import ColorPaletteSelector from '@/components/ui/ColorPaletteSelector';
+import LanguageSwitcher from '@/components/LanguageSwitcher/LanguageSwitcher';
 import { 
   NavbarContainer, 
   NavbarContent, 
@@ -17,6 +19,7 @@ import {
 const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
   
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -30,7 +33,7 @@ const Navbar: React.FC = () => {
     <NavbarContainer>
       <NavbarContent>
         <Logo>
-          <Link to="/">bl-custom-fe-react</Link>
+          <Link to="/">{t('app.title')}</Link>
         </Logo>
         
         <MobileMenuButton onClick={toggleMobileMenu} aria-label="Toggle menu">
@@ -47,18 +50,19 @@ const Navbar: React.FC = () => {
             to="/" 
             $isActive={location.pathname === '/'}
           >
-            Home
+            {t('navigation.home')}
           </NavLink>
           <NavLink 
             onClick={closeMobileMenu}
             to="/about" 
             $isActive={location.pathname === '/about'}
           >
-            About
+            {t('navigation.about')}
           </NavLink>
         </NavLinks>
         
         <NavAction>
+          <LanguageSwitcher />
           <ThemeSwitcher />
         </NavAction>
       </NavbarContent>
@@ -66,7 +70,8 @@ const Navbar: React.FC = () => {
       {mobileMenuOpen && (
         <MobileMenu>
           <ThemeControls>
-            <ColorPaletteSelector title="Choose accent color" />
+            <ColorPaletteSelector title={t('theme.chooseAccentColor')} />
+            <LanguageSwitcher />
           </ThemeControls>
         </MobileMenu>
       )}

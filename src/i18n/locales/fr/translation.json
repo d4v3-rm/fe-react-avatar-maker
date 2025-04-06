@@ -1,0 +1,79 @@
+{
+  "app": {
+    "title": "Créateur d'Avatar",
+    "description": "Créez votre propre avatar personnalisé en modifiant diverses caractéristiques comme la coiffure, les vêtements, les accessoires et plus encore. Prévisualisez en temps réel et téléchargez votre création dans plusieurs formats. Vous pouvez également partager votre avatar en copiant l'URL avec toutes vos sélections sauvegardées dans les paramètres de requête."
+  },
+  "preview": {
+    "title": "Aperçu"
+  },
+  "customize": {
+    "title": "Personnalisez Votre Avatar"
+  },
+  "avatarOptions": {
+    "skinColor": "Couleur de peau",
+    "hairStyle": "Coiffure",
+    "hairColor": "Couleur de cheveux",
+    "facialHair": "Pilosité faciale",
+    "facialHairColor": "Couleur de pilosité faciale",
+    "eyes": "Yeux",
+    "eyebrows": "Sourcils",
+    "mouth": "Bouche",
+    "clothes": "Vêtements",
+    "clothesColor": "Couleur des vêtements",
+    "accessories": "Accessoires",
+    "resetButton": "Réinitialiser l'Avatar"
+  },
+  "export": {
+    "title": "Exportez Votre Avatar",
+    "downloadSvg": "Télécharger en SVG",
+    "downloadPng": "Télécharger en PNG",
+    "downloadJpg": "Télécharger en JPG",
+    "successMessage": "Avatar exporté avec succès au format {{format}} !"
+  },
+  "share": {
+    "title": "Partagez Votre Avatar",
+    "copyButton": "Copier l'URL",
+    "copiedButton": "Copié !",
+    "successMessage": "URL copiée dans le presse-papiers !"
+  },
+  "errors": {
+    "exportError": "Une erreur s'est produite lors de l'exportation. Veuillez réessayer plus tard.",
+    "clipboardError": "Impossible de copier dans le presse-papiers. Essayez de copier manuellement."
+  },
+  "colorLabels": {
+    "light": "Clair",
+    "lightMedium": "Moyen clair",
+    "medium": "Moyen",
+    "darkMedium": "Moyen foncé",
+    "dark": "Foncé",
+    "black": "Noir",
+    "darkBrown": "Brun foncé",
+    "brown": "Brun",
+    "auburn": "Auburn",
+    "blonde": "Blond",
+    "platinum": "Platine",
+    "pink": "Rose",
+    "whiteGray": "Blanc/Gris",
+    "navyBlue": "Bleu marine",
+    "skyBlue": "Bleu ciel",
+    "blue": "Bleu",
+    "darkBlue": "Bleu foncé",
+    "gray": "Gris",
+    "darkGray": "Gris foncé",
+    "red": "Rouge",
+    "magenta": "Magenta",
+    "lightGreen": "Vert clair",
+    "green": "Vert",
+    "yellow": "Jaune",
+    "orange": "Orange",
+    "white": "Blanc"
+  },
+  "languageName": {
+    "en": "English",
+    "it": "Italiano",
+    "fr": "Français",
+    "es": "Español",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

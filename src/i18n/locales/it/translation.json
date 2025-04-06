@@ -1,0 +1,123 @@
+{
+  "app": {
+    "title": "Creatore di Avatar",
+    "description": "Crea il tuo avatar personalizzato modificando varie caratteristiche come acconciatura, vestiti, accessori e altro. Anteprima in tempo reale e scarica la tua creazione in diversi formati. Puoi anche condividere il tuo avatar copiando l'URL con tutte le tue selezioni salvate nei parametri di query."
+  },
+  "home": {
+    "hero": {
+      "title": "Benvenuto nel Creatore di Avatar",
+      "subtitle": "Crea il tuo avatar personalizzato con il nostro strumento facile da usare. Personalizza, visualizza in anteprima e condividi le tue creazioni!",
+      "getStarted": "Inizia Ora"
+    },
+    "features": {
+      "title": "Caratteristiche Principali"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "Chi siamo"
+  },
+  "about": {
+    "title": "Informazioni su Avatar Maker",
+    "subtitle": "Uno strumento personalizzabile per la creazione di avatar",
+    "overview": {
+      "title": "Panoramica del Progetto"
+    },
+    "team": {
+      "title": "Incontra il Creatore"
+    },
+    "getStarted": {
+      "title": "Come Iniziare",
+      "backToHome": "Torna alla Home"
+    }
+  },
+  "theme": {
+    "chooseAccentColor": "Scegli il colore di accento"
+  },
+  "preview": {
+    "title": "Anteprima"
+  },
+  "customize": {
+    "title": "Personalizza il tuo Avatar"
+  },
+  "avatarOptions": {
+    "skinColor": "Colore della pelle",
+    "hairStyle": "Stile dei capelli",
+    "hairColor": "Colore dei capelli",
+    "facialHair": "Barba",
+    "facialHairColor": "Colore della barba",
+    "eyes": "Occhi",
+    "eyebrows": "Sopracciglia",
+    "mouth": "Bocca",
+    "clothes": "Vestiti",
+    "clothesColor": "Colore dei vestiti",
+    "accessories": "Accessori",
+    "resetButton": "Resetta Avatar"
+  },
+  "actions": {
+    "resetAvatar": "Resetta Avatar"
+  },
+  "export": {
+    "title": "Esporta il tuo Avatar",
+    "downloadAsSvg": "Scarica come SVG",
+    "downloadAsPng": "Scarica come PNG",
+    "downloadAsJpg": "Scarica come JPG",
+    "successMessage": "Avatar esportato con successo in formato {{format}}!"
+  },
+  "share": {
+    "title": "Condividi il tuo Avatar",
+    "copyButton": "Copia URL",
+    "copiedButton": "Copiato!",
+    "successMessage": "URL copiato negli appunti!"
+  },
+  "success": {
+    "exportSuccess": "Avatar esportato con successo in formato {{format}}!"
+  },
+  "errors": {
+    "exportError": "Si è verificato un errore durante l'esportazione. Riprova più tardi.",
+    "clipboardError": "Impossibile copiare negli appunti. Prova a copiare manualmente.",
+    "avatarError": "Errore Avatar",
+    "svgExportError": "Si è verificato un errore durante l'esportazione in SVG. Riprova.",
+    "pngExportError": "Si è verificato un errore durante l'esportazione in PNG. Riprova più tardi.",
+    "pngExportGeneralError": "Si è verificato un errore durante l'esportazione in PNG.",
+    "jpgExportError": "Si è verificato un errore durante l'esportazione in JPG. Riprova più tardi.",
+    "jpgLoadError": "Si è verificato un errore durante il caricamento dell'immagine per l'esportazione JPG.",
+    "jpgExportGeneralError": "Si è verificato un errore durante l'esportazione in JPG."
+  },
+  "colorLabels": {
+    "light": "Chiaro",
+    "lightMedium": "Medio chiaro",
+    "medium": "Medio",
+    "darkMedium": "Medio scuro",
+    "dark": "Scuro",
+    "black": "Nero",
+    "darkBrown": "Marrone scuro",
+    "brown": "Marrone",
+    "auburn": "Castano rossiccio",
+    "blonde": "Biondo",
+    "platinum": "Platino",
+    "pink": "Rosa",
+    "whiteGray": "Bianco/Grigio",
+    "navyBlue": "Blu navy",
+    "skyBlue": "Azzurro",
+    "blue": "Blu",
+    "darkBlue": "Blu scuro",
+    "gray": "Grigio",
+    "darkGray": "Grigio scuro",
+    "red": "Rosso",
+    "magenta": "Magenta",
+    "lightGreen": "Verde chiaro",
+    "green": "Verde",
+    "yellow": "Giallo",
+    "orange": "Arancione",
+    "white": "Bianco"
+  },
+  "languageName": {
+    "en": "English",
+    "it": "Italiano",
+    "fr": "Français",
+    "es": "Español",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

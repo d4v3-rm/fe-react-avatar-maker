@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useSelector } from 'react-redux';
+import { useTranslation } from 'react-i18next';
 import { selectAvatarOptions } from '@/store/slices/avatarSlice';
 import { createAvatar } from '@dicebear/core';
 import { avataaars } from '@dicebear/collection';
@@ -59,6 +60,7 @@ const ExportButton = styled.button`
 
 const AvatarExporter: React.FC = () => {
   const options = useSelector(selectAvatarOptions);
+  const { t } = useTranslation();
 
   // Create avatar with current options
   const getAvatarSvg = () => {
@@ -82,7 +84,7 @@ const AvatarExporter: React.FC = () => {
     } catch (error) {
       console.error('Error generating avatar:', error);
       // Return a default avatar or placeholder SVG in case of error
-      return '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><rect width="200" height="200" fill="#f0f0f0"/><text x="50%" y="50%" font-size="16" text-anchor="middle" fill="#666">Avatar Error</text></svg>';
+      return `<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><rect width="200" height="200" fill="#f0f0f0"/><text x="50%" y="50%" font-size="16" text-anchor="middle" fill="#666">${t('errors.avatarError')}</text></svg>`;
     }
   };
 
@@ -94,7 +96,7 @@ const AvatarExporter: React.FC = () => {
       downloadBlob(blob, 'my-avatar.svg');
     } catch (error) {
       console.error('Error in SVG export:', error);
-      alert('Si è verificato un errore durante l\'esportazione in SVG.');
+      alert(t('errors.svgExportError'));
     }
   };
 
@@ -127,7 +129,7 @@ const AvatarExporter: React.FC = () => {
           }
         } catch (error) {
           console.error('Error processing PNG export:', error);
-          alert('Si è verificato un errore durante l\'esportazione in PNG. Riprova più tardi.');
+          alert(t('errors.pngExportError'));
           URL.revokeObjectURL(url);
         }
       };
@@ -141,7 +143,7 @@ const AvatarExporter: React.FC = () => {
       img.src = url;
     } catch (error) {
       console.error('Error in PNG export:', error);
-      alert('Si è verificato un errore durante l\'esportazione in PNG.');
+      alert(t('errors.pngExportGeneralError'));
     }
   };
 
@@ -175,21 +177,21 @@ const AvatarExporter: React.FC = () => {
           }
         } catch (error) {
           console.error('Error processing JPG export:', error);
-          alert('Si è verificato un errore durante l\'esportazione in JPG. Riprova più tardi.');
+          alert(t('errors.jpgExportError'));
           URL.revokeObjectURL(url);
         }
       };
       
       img.onerror = () => {
         console.error('Error loading image for JPG export');
-        alert('Si è verificato un errore durante il caricamento dell\'immagine per l\'esportazione JPG.');
+        alert(t('errors.jpgLoadError'));
         URL.revokeObjectURL(url);
       };
       
       img.src = url;
     } catch (error) {
       console.error('Error in JPG export:', error);
-      alert('Si è verificato un errore durante l\'esportazione in JPG.');
+      alert(t('errors.jpgExportGeneralError'));
     }
   };
 
@@ -205,21 +207,21 @@ const AvatarExporter: React.FC = () => {
     
     // Show success message with file extension
     const fileExtension = fileName.split('.').pop()?.toUpperCase();
-    alert(`Avatar esportato con successo in formato ${fileExtension}!`);
+    alert(t('success.exportSuccess', { format: fileExtension }));
   };
 
   return (
     <Container>
-      <Title>Export Your Avatar</Title>
+      <Title>{t('export.title')}</Title>
       <ButtonsContainer>
         <ExportButton onClick={exportSvg}>
-          Download as SVG
+          {t('export.downloadAsSvg')}
         </ExportButton>
         <ExportButton onClick={exportPng}>
-          Download as PNG
+          {t('export.downloadAsPng')}
         </ExportButton>
         <ExportButton onClick={exportJpg}>
-          Download as JPG
+          {t('export.downloadAsJpg')}
         </ExportButton>
       </ButtonsContainer>
     </Container>

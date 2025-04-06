@@ -1,24 +1,25 @@
 {
-  "name": "bl-custom-fe-react",
+  "name": "fe-react-avatar-maker",
   "version": "1.0.0",
   "license": "MIT",
-  "description": "A scalable and modular React boilerplate with styled-components and modern design principles",
+  "description": "A customizable avatar creation tool that allows users to generate and download unique avatars with multilingual support",
   "keywords": [
     "React",
-    "Boilerplate",
+    "Avatar",
     "styled-components",
     "TypeScript",
     "Frontend",
     "Vite",
-    "Modern Design",
-    "Dark Mode",
-    "Ant Design"
+    "Multilingual",
+    "i18n",
+    "Dicebear",
+    "Customizable"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/5h1ngy/bl-custom-fe-react.git"
+    "url": "https://github.com/5h1ngy/fe-react-avatar-maker.git"
   },
-  "author": "Your Name",
+  "author": "5h1ngy <5h1ngy@example.com>",
   "engines": {
     "node": ">=20.0.0",
     "npm": ">=9.0.0"
@@ -31,10 +32,10 @@
     "preview:prod": "vite preview --mode prod --outDir dist",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "clean": "rimraf dist node_modules",
-    "docker:build": "docker build -t bl-custom-fe-react:latest .",
-    "docker:run": "docker run -p 8080:80 bl-custom-fe-react:latest",
+    "docker:build": "docker build -t fe-react-avatar-maker:latest .",
+    "docker:run": "docker run -p 8080:80 fe-react-avatar-maker:latest",
     "docker:build-run": "npm run docker:build && npm run docker:run",
-    "docker:push": "docker tag bl-custom-fe-react:latest 5h1ngy/bl-custom-fe-react:latest && docker push 5h1ngy/bl-custom-fe-react:latest"
+    "docker:push": "docker tag fe-react-avatar-maker:latest 5h1ngy/fe-react-avatar-maker:latest && docker push 5h1ngy/fe-react-avatar-maker:latest"
   },
   "dependencies": {
     "@dicebear/collection": "^9.2.2",
@@ -63,6 +64,10 @@
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "i18next": "^24.2.3",
+    "i18next-browser-languagedetector": "^8.0.4",
+    "i18next-http-backend": "^3.0.2",
+    "react-i18next": "^15.4.1",
     "rimraf": "^5.0.5",
     "typescript": "^5.3.3",
     "vite": "^5.0.8",

@@ -1,24 +1,25 @@
-# bl-custom-fe-react Boilerplate
+# Avatar Maker
 
 [![React](https://img.shields.io/badge/React-18.x-61DAFB?style=flat&logo=react)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=flat&logo=vite)](https://vitejs.dev/)
 [![styled-components](https://img.shields.io/badge/styled--components-6.x-DB7093?style=flat&logo=styled-components)](https://styled-components.com/)
+[![i18next](https://img.shields.io/badge/i18next-Multilingual-26A69A?style=flat&logo=i18next)](https://www.i18next.com/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat&logo=docker)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-A scalable and modular React boilerplate with styled-components and modern design principles.
+A customizable avatar creation tool that allows users to generate and download unique avatars with multilingual support.
 
 ## Features
 
-- 🚀 **Modern React Stack**: Built with React 18, TypeScript, Vite, and styled-components
+- 🎭 **Customizable Avatars**: Create personalized avatars with various options for features, colors, and styles
+- 🌐 **Multilingual Support**: Fully localized in Italian, English, French, Spanish, Chinese, and Japanese
+- 🔄 **State Management**: Redux-based state persistence with URL and localStorage synchronization
+- 💾 **Multiple Export Formats**: Download your avatar in SVG, PNG, and JPG formats
+- 🔗 **Shareable Links**: Generate and share links that preserve your avatar customizations
 - 🎨 **Theme Support**: Light and dark mode with customizable accent colors
-- 🧩 **Modular Architecture**: Well-organized folder structure for maximum scalability
-- 🔄 **State Management**: Redux Toolkit for predictable state management
-- 🛣️ **Routing**: React Router v6 with example route configurations
-- 🧪 **Mock Mode**: Development without backend dependencies
-- 🧰 **UI Components**: Ready-to-use UI components with consistent styling
-- 🐳 **Docker Support**: Optimized Docker setup with Nginx for production deployment
+- 📱 **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- 🐳 **Docker Support**: Production-ready Docker setup for easy deployment
 
 ## Getting Started
 
@@ -33,8 +34,8 @@ A scalable and modular React boilerplate with styled-components and modern desig
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/5h1ngy/bl-custom-fe-react.git
-cd bl-custom-fe-react
+git clone https://github.com/5h1ngy/fe-react-avatar-maker.git
+cd fe-react-avatar-maker
 ```
 
 2. Install dependencies:

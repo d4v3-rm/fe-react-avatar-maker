@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useTranslation } from 'react-i18next';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import {
@@ -18,31 +19,32 @@ import {
 } from './styles';
 
 const HomePage: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
-        <title>Home | bl-custom-fe-react</title>
-        <meta name="description" content="A scalable and modular React boilerplate with styled-components" />
+        <title>{t('app.title')}</title>
+        <meta name="description" content={t('app.description')} />
       </Helmet>
       
       <HomeContainer>
         <HeroSection>
           <HeroContent>
-            <HeroTitle>Welcome to bl-custom-fe-react Boilerplate</HeroTitle>
+            <HeroTitle>{t('home.hero.title')}</HeroTitle>
             <HeroSubtitle>
-              A scalable and modular React boilerplate with styled-components and modern design principles
+              {t('home.hero.subtitle')}
             </HeroSubtitle>
             <Button 
               size="large" 
               onClick={() => window.open('https://github.com/5h1ngy/bl-custom-fe-react', '_blank')}
             >
-              Get Started
+              {t('home.hero.getStarted')}
             </Button>
           </HeroContent>
         </HeroSection>
         
         <FeaturesSection>
-          <h2>Key Features</h2>
+          <h2>{t('home.features.title')}</h2>
           <FeaturesList>
             <FeatureItem>
               <Card 

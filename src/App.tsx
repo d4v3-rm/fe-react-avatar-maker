@@ -11,6 +11,9 @@ import AboutPage from '@/pages/AboutPage';
 import NotFoundPage from '@/pages/NotFoundPage';
 import AvatarMakerPage from '@/pages/AvatarMakerPage';
 
+// Importa i18n (deve essere importato prima di qualsiasi componente che usa traduzioni)
+import '@/i18n';
+
 // Import mock service only in development/mock mode
 const isMockMode = import.meta.env.VITE_APP_MOCK_ENABLED === 'true';
 

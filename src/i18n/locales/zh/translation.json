@@ -1,0 +1,79 @@
+{
+  "app": {
+    "title": "头像制作器",
+    "description": "通过自定义发型、服装、配饰等各种特征来创建您自己的个性化头像。实时预览并以多种格式下载您的创作。您还可以通过复制URL分享您的头像，所有选择都保存在查询参数中。"
+  },
+  "preview": {
+    "title": "预览"
+  },
+  "customize": {
+    "title": "定制您的头像"
+  },
+  "avatarOptions": {
+    "skinColor": "肤色",
+    "hairStyle": "发型",
+    "hairColor": "发色",
+    "facialHair": "面部毛发",
+    "facialHairColor": "面部毛发颜色",
+    "eyes": "眼睛",
+    "eyebrows": "眉毛",
+    "mouth": "嘴巴",
+    "clothes": "服装",
+    "clothesColor": "服装颜色",
+    "accessories": "配饰",
+    "resetButton": "重置头像"
+  },
+  "export": {
+    "title": "导出您的头像",
+    "downloadSvg": "下载为SVG",
+    "downloadPng": "下载为PNG",
+    "downloadJpg": "下载为JPG",
+    "successMessage": "头像已成功导出为{{format}}格式！"
+  },
+  "share": {
+    "title": "分享您的头像",
+    "copyButton": "复制URL",
+    "copiedButton": "已复制！",
+    "successMessage": "URL已复制到剪贴板！"
+  },
+  "errors": {
+    "exportError": "导出过程中发生错误。请稍后再试。",
+    "clipboardError": "无法复制到剪贴板。请尝试手动复制。"
+  },
+  "colorLabels": {
+    "light": "浅色",
+    "lightMedium": "浅中色",
+    "medium": "中等",
+    "darkMedium": "深中色",
+    "dark": "深色",
+    "black": "黑色",
+    "darkBrown": "深棕色",
+    "brown": "棕色",
+    "auburn": "赤褐色",
+    "blonde": "金色",
+    "platinum": "铂金色",
+    "pink": "粉红色",
+    "whiteGray": "白/灰色",
+    "navyBlue": "海军蓝",
+    "skyBlue": "天蓝色",
+    "blue": "蓝色",
+    "darkBlue": "深蓝色",
+    "gray": "灰色",
+    "darkGray": "深灰色",
+    "red": "红色",
+    "magenta": "品红色",
+    "lightGreen": "浅绿色",
+    "green": "绿色",
+    "yellow": "黄色",
+    "orange": "橙色",
+    "white": "白色"
+  },
+  "languageName": {
+    "en": "English",
+    "it": "Italiano",
+    "fr": "Français",
+    "es": "Español",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

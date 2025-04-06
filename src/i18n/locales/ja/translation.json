@@ -1,0 +1,79 @@
+{
+  "app": {
+    "title": "アバターメーカー",
+    "description": "髪型、服装、アクセサリーなど、さまざまな特徴をカスタマイズして、あなただけのアバターを作成しましょう。リアルタイムでプレビューし、さまざまな形式でダウンロードできます。また、すべての選択がクエリパラメータに保存されたURLをコピーして、アバターを共有することもできます。"
+  },
+  "preview": {
+    "title": "プレビュー"
+  },
+  "customize": {
+    "title": "アバターをカスタマイズ"
+  },
+  "avatarOptions": {
+    "skinColor": "肌の色",
+    "hairStyle": "髪型",
+    "hairColor": "髪の色",
+    "facialHair": "ひげ",
+    "facialHairColor": "ひげの色",
+    "eyes": "目",
+    "eyebrows": "眉毛",
+    "mouth": "口",
+    "clothes": "服",
+    "clothesColor": "服の色",
+    "accessories": "アクセサリー",
+    "resetButton": "アバターをリセット"
+  },
+  "export": {
+    "title": "アバターのエクスポート",
+    "downloadSvg": "SVGとしてダウンロード",
+    "downloadPng": "PNGとしてダウンロード",
+    "downloadJpg": "JPGとしてダウンロード",
+    "successMessage": "アバターが{{format}}形式で正常にエクスポートされました！"
+  },
+  "share": {
+    "title": "アバターを共有",
+    "copyButton": "URLをコピー",
+    "copiedButton": "コピー済み！",
+    "successMessage": "URLがクリップボードにコピーされました！"
+  },
+  "errors": {
+    "exportError": "エクスポート中にエラーが発生しました。後でもう一度お試しください。",
+    "clipboardError": "クリップボードにコピーできませんでした。手動でコピーしてみてください。"
+  },
+  "colorLabels": {
+    "light": "明るい",
+    "lightMedium": "明るい中間",
+    "medium": "中間",
+    "darkMedium": "暗い中間",
+    "dark": "暗い",
+    "black": "黒",
+    "darkBrown": "濃い茶色",
+    "brown": "茶色",
+    "auburn": "赤褐色",
+    "blonde": "金髪",
+    "platinum": "プラチナ",
+    "pink": "ピンク",
+    "whiteGray": "白/灰色",
+    "navyBlue": "ネイビーブルー",
+    "skyBlue": "スカイブルー",
+    "blue": "青",
+    "darkBlue": "ダークブルー",
+    "gray": "灰色",
+    "darkGray": "ダークグレー",
+    "red": "赤",
+    "magenta": "マゼンタ",
+    "lightGreen": "ライトグリーン",
+    "green": "緑",
+    "yellow": "黄色",
+    "orange": "オレンジ",
+    "white": "白"
+  },
+  "languageName": {
+    "en": "English",
+    "it": "Italiano",
+    "fr": "Français",
+    "es": "Español",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}

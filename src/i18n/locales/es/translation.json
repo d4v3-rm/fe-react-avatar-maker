@@ -1,0 +1,79 @@
+{
+  "app": {
+    "title": "Creador de Avatar",
+    "description": "Crea tu propio avatar personalizado modificando varias características como peinado, ropa, accesorios y más. Vista previa en tiempo real y descarga tu creación en múltiples formatos. También puedes compartir tu avatar copiando la URL con todas tus selecciones guardadas en los parámetros de consulta."
+  },
+  "preview": {
+    "title": "Vista Previa"
+  },
+  "customize": {
+    "title": "Personaliza Tu Avatar"
+  },
+  "avatarOptions": {
+    "skinColor": "Color de piel",
+    "hairStyle": "Peinado",
+    "hairColor": "Color de pelo",
+    "facialHair": "Vello facial",
+    "facialHairColor": "Color de vello facial",
+    "eyes": "Ojos",
+    "eyebrows": "Cejas",
+    "mouth": "Boca",
+    "clothes": "Ropa",
+    "clothesColor": "Color de ropa",
+    "accessories": "Accesorios",
+    "resetButton": "Reiniciar Avatar"
+  },
+  "export": {
+    "title": "Exporta Tu Avatar",
+    "downloadSvg": "Descargar como SVG",
+    "downloadPng": "Descargar como PNG",
+    "downloadJpg": "Descargar como JPG",
+    "successMessage": "¡Avatar exportado con éxito en formato {{format}}!"
+  },
+  "share": {
+    "title": "Comparte Tu Avatar",
+    "copyButton": "Copiar URL",
+    "copiedButton": "¡Copiado!",
+    "successMessage": "¡URL copiada al portapapeles!"
+  },
+  "errors": {
+    "exportError": "Ocurrió un error durante la exportación. Por favor, inténtalo de nuevo más tarde.",
+    "clipboardError": "No se pudo copiar al portapapeles. Intenta copiar manualmente."
+  },
+  "colorLabels": {
+    "light": "Claro",
+    "lightMedium": "Medio claro",
+    "medium": "Medio",
+    "darkMedium": "Medio oscuro",
+    "dark": "Oscuro",
+    "black": "Negro",
+    "darkBrown": "Marrón oscuro",
+    "brown": "Marrón",
+    "auburn": "Castaño rojizo",
+    "blonde": "Rubio",
+    "platinum": "Platino",
+    "pink": "Rosa",
+    "whiteGray": "Blanco/Gris",
+    "navyBlue": "Azul marino",
+    "skyBlue": "Azul cielo",
+    "blue": "Azul",
+    "darkBlue": "Azul oscuro",
+    "gray": "Gris",
+    "darkGray": "Gris oscuro",
+    "red": "Rojo",
+    "magenta": "Magenta",
+    "lightGreen": "Verde claro",
+    "green": "Verde",
+    "yellow": "Amarillo",
+    "orange": "Naranja",
+    "white": "Blanco"
+  },
+  "languageName": {
+    "en": "English",
+    "it": "Italiano",
+    "fr": "Français",
+    "es": "Español",
+    "zh": "中文",
+    "ja": "日本語"
+  }
+}
