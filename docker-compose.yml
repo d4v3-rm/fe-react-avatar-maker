@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  bl-custom-fe-react:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bl-custom-fe-react
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    # Uncomment the following lines if you need environment variables
+    # environment:
+    #   - NODE_ENV=production

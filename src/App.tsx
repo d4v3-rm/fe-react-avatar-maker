@@ -1,41 +1,49 @@
-import { RouterProvider } from "react-router-dom"
-import { createBrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from '@/providers/ThemeProvider';
+import { Provider } from 'react-redux';
+import { store } from '@/store';
 import { HelmetProvider } from 'react-helmet-async';
+import MainLayout from '@/layouts/MainLayout';
+import HomePage from '@/pages/HomePage';
+import AboutPage from '@/pages/AboutPage';
+import NotFoundPage from '@/pages/NotFoundPage';
 
-import ThemeProvider from "@/providers/ThemeProvider"
-import store from '@/store';
-import routes from '@/routes'
+// Import mock service only in development/mock mode
+const isMockMode = import.meta.env.VITE_APP_MOCK_ENABLED === 'true';
 
 const App: React.FC = () => {
-    console.warn("env", import.meta.env);
+  const appTitle = import.meta.env.VITE_APP_TITLE || 'bl-custom-fe-react';
+  
+  useEffect(() => {
+    // Initialize mock API in development mode
+    if (isMockMode) {
+      import('@/services/mock').then(({ initializeMockApi }) => {
+        initializeMockApi();
+      });
+    }
+  }, []);
 
-    const imgUrl = new URL(`${import.meta.env.VITE_BASENAME}/logo.png`, import.meta.url).href
-
-    return <Provider store={store}>
-        <ThemeProvider>
-            <HelmetProvider>
-                <Helmet>
-                    <meta charSet="UTF-8" />
-                    <link rel="icon" type="image/svg+xml" href={imgUrl} />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <title>Avatar Maker</title>
-                </Helmet>
-            </HelmetProvider>
-            <RouterProvider router={createBrowserRouter(routes, {
-                basename: import.meta.env.VITE_BASENAME,
-                // https://reactrouter.com/en/main/routers/create-browser-router#optsfuture
-                future: {
-                    v7_fetcherPersist: true,
-                    v7_normalizeFormMethod: true,
-                    v7_partialHydration: true,
-                    v7_relativeSplatPath: true,
-                    v7_skipActionErrorRevalidation: true,
-                },
-            })} />
-        </ThemeProvider>
+  return (
+    <Provider store={store}>
+      <ThemeProvider>
+        <HelmetProvider>
+          <Helmet>
+            <title>{appTitle}</title>
+            <meta name="description" content="A scalable and modular React boilerplate" />
+          </Helmet>
+          <Routes>
+            <Route path="/" element={<MainLayout />}>
+              <Route index element={<HomePage />} />
+              <Route path="about" element={<AboutPage />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Route>
+          </Routes>
+        </HelmetProvider>
+      </ThemeProvider>
     </Provider>
-}
+  );
+};
 
 export default App;

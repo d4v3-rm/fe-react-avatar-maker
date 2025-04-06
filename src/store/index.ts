@@ -1,19 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit';
-import containerMaker from './containerMaker';
-import { actions as containerMakerActions } from "./containerMaker"
+import themeReducer from './slices/themeSlice';
+import userReducer from './slices/userSlice';
 
-export const actions = {
-    containerMaker: containerMakerActions,
-}
-
-const reducer = {
-    containerMaker,
-};
-
-const store = configureStore({
-    reducer,
+export const store = configureStore({
+  reducer: {
+    theme: themeReducer,
+    user: userReducer,
+  },
+  devTools: import.meta.env.MODE !== 'prod',
 });
 
-export type State = ReturnType<typeof store.getState>;
-
-export default store;
+// Infer the `RootState` and `AppDispatch` types from the store itself
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
