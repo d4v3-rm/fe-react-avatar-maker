@@ -40,18 +40,19 @@ jobs:
         env:
           NODE_ENV: production
 
-      # Configurazione base path per GitHub Pages se necessario
-      - name: Update base path in index.html for GH Pages
-        run: |
-          find dist -type f -name "*.html" -exec sed -i 's|<head>|<head><base href="/fe-react-avatar-maker/">|g' {} \;
-          find dist -type f -name "*.js" -exec sed -i 's|"/"|\"/fe-react-avatar-maker/\"|g' {} \;
+      # COMMENTATO: Base path già configurato in vite.config.ts
+      # - name: Update base path in index.html for GH Pages
+      #   run: |
+      #     find dist -type f -name "*.html" -exec sed -i 's|<head>|<head><base href="/fe-react-avatar-maker/">|g' {} \;
+      #     find dist -type f -name "*.js" -exec sed -i 's|"/"|"\/fe-react-avatar-maker\/"|g' {} \;
 
       # Crea un file CNAME se hai un dominio personalizzato
       # - name: Create CNAME file
       #   run: echo "yourdomain.com" > dist/CNAME
 
-      - name: Copy index.html to 404.html for SPA routing
-        run: cp dist/index.html dist/404.html
+      # COMMENTATO: File 404.html già creato nella cartella public
+      # - name: Copy index.html to 404.html for SPA routing
+      #   run: cp dist/index.html dist/404.html
 
       # Aggiungiamo un favicon.ico se mancante
       - name: Check and copy favicon if missing

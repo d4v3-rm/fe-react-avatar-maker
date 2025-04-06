@@ -18,7 +18,14 @@ export default defineConfig(function (_a) {
     var mode = _a.mode;
     // Load env file based on mode
     var env = loadEnv(mode, process.cwd(), '');
+    // Set base path for GitHub Pages deployment
+    // For GitHub Pages, we need the repository name as the base path
+    var isGitHubPages = mode === 'prod' && env.GITHUB_PAGES === 'true';
+    var base = isGitHubPages ? '/fe-react-avatar-maker/' : '/';
+    console.log("Using base path: ".concat(base, " (GitHub Pages: ").concat(isGitHubPages, ")")); // Debug output
     return {
+        // Set base path (important for GitHub Pages deployment)
+        base: base,
         plugins: [
             react(),
             tsconfigPaths(),
