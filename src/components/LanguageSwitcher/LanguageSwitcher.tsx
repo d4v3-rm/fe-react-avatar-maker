@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
+import { FaGlobe, FaFlag } from 'react-icons/fa';
 
 const Container = styled.div`
   display: flex;
@@ -9,13 +10,13 @@ const Container = styled.div`
   margin: 0 1rem;
 `;
 
-const LanguageLabel = styled.span`
-  font-size: 0.9rem;
+const FlagIcon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
   color: ${({ theme }) => theme.colors.text.secondary};
-  
-  @media (max-width: 576px) {
-    display: none;
-  }
+  margin-right: 0.25rem;
 `;
 
 const LanguageSelect = styled.select`
@@ -52,8 +53,10 @@ const LanguageSwitcher: React.FC = () => {
   
   return (
     <Container>
-      <LanguageLabel>{t('languageName.en')}</LanguageLabel>
-      <LanguageSelect value={i18n.language} onChange={changeLanguage}>
+      <FlagIcon>
+        <FaGlobe aria-label="Language selector" title="Change language" />
+      </FlagIcon>
+      <LanguageSelect value={i18n.language} onChange={changeLanguage} aria-label="Select language">
         <option value="en">{t('languageName.en')}</option>
         <option value="it">{t('languageName.it')}</option>
         <option value="fr">{t('languageName.fr')}</option>
