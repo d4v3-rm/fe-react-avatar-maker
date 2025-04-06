@@ -82,7 +82,7 @@ const ColorOption = styled.button<{ color: string; isSelected: boolean }>`
 const ResetButton = styled.button`
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
-  background-color: ${({ theme }) => theme.colors.error};
+  background-color: ${({ theme }) => theme.colors.accent};
   color: white;
   font-size: 1rem;
   font-weight: 600;
