@@ -3,7 +3,7 @@ name: Deploy Avatar Maker to GitHub Pages
 on:
   push:
     branches:
-      - main  # O il tuo branch di riferimento
+      - develop  # O il tuo branch di riferimento
   workflow_dispatch:  # Permette l'esecuzione manuale tramite l'interfaccia di GitHub
 
 permissions:

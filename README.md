@@ -1,5 +1,9 @@
 # Avatar Maker
 
+<p align="center">
+  <img src="./assets/logo.png" alt="logo" width="512">
+</p>
+
 [![React](https://img.shields.io/badge/React-18.x-61DAFB?style=flat&logo=react)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=flat&logo=vite)](https://vitejs.dev/)
@@ -9,6 +13,13 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 A customizable avatar creation tool that allows users to generate and download unique avatars with multilingual support.
+
+<p align="center">
+   <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+      <img src="./assets/preview_desktop_dark.png" alt="Preview Desktop Dark" style="height: 150px; object-fit: contain;">
+      <img src="./assets/preview_mobile_dark.png" alt="Preview Mobile Dark" style="height: 150px; object-fit: contain;">
+   </div>
+</p>
 
 ## Features
 
