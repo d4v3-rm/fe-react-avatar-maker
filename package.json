@@ -26,9 +26,9 @@
   },
   "type": "module",
   "scripts": {
-    "start:dev": "vite --mode dev",
+    "start:dev": "vite --mode dev --open /fe-react-avatar-maker",
     "build:prod": "tsc -b && vite build --mode prod --outDir dist",
-    "preview:prod": "vite preview --mode prod --outDir dist",
+    "preview:prod": "vite preview --mode prod --outDir dist --open /fe-react-avatar-maker",
     "clean": "rimraf dist node_modules",
     "docker:build": "docker build -t fe-react-avatar-maker:latest .",
     "docker:run": "docker run -p 8080:80 fe-react-avatar-maker:latest"
