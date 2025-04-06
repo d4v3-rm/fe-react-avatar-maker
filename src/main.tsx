@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import App from './App';
 import { store } from '@/store';
@@ -18,13 +18,13 @@ if (import.meta.env.VITE_APP_MOCK_ENABLED === 'true') {
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Provider store={store}>
-      <HashRouter>
+      <BrowserRouter basename="/fe-react-avatar-maker">
         <HelmetProvider>
           <ThemeProvider>
             <App />
           </ThemeProvider>
         </HelmetProvider>
-      </HashRouter>
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>
 );
