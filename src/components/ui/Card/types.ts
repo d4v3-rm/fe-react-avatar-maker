@@ -2,7 +2,7 @@ import { HTMLAttributes, ReactNode } from 'react';
 
 export type CardShadow = 'none' | 'sm' | 'md' | 'lg';
 
-export interface CardProps extends HTMLAttributes<HTMLDivElement> {
+export interface CardProps extends Omit<HTMLAttributes<HTMLDivElement>, 'title'> {
   /** Card title */
   title?: ReactNode;
   /** Extra content in the top-right corner */

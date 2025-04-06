@@ -147,7 +147,6 @@ dispatch(setAccentColor('blue')); // 'blue', 'purple', 'teal', etc.
 - `npm run start:mock` - Start development server with mock API enabled
 - `npm run build:prod` - Build for production
 - `npm run preview:prod` - Preview production build locally
-- `npm run lint` - Run ESLint
 - `npm run clean` - Remove dist and node_modules directories
 - `npm run docker:build` - Build Docker image
 - `npm run docker:run` - Run Docker container (after building)

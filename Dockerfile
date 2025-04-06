@@ -3,17 +3,21 @@ FROM node:20-alpine AS build
 
 WORKDIR /app
 
-# Copy package files
-COPY package*.json ./
+# Enable Corepack for Yarn v4
+RUN corepack enable
+
+# Copy package files and yarn config
+COPY package.json yarn.lock .yarnrc.yml ./
+COPY .yarn ./.yarn
 
 # Install dependencies
-RUN npm ci
+RUN corepack yarn install
 
 # Copy project files
 COPY . .
 
 # Build the app
-RUN npm run build:prod
+RUN corepack yarn build:prod
 
 # Production stage with Nginx
 FROM nginx:stable-alpine

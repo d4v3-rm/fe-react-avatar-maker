@@ -67,7 +67,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   return (
     <ThemeContext.Provider value={value}>
       <StyledComponentsProvider theme={theme}>
-        <GlobalStyles />
+        <GlobalStyles theme={theme} />
         {children}
       </StyledComponentsProvider>
     </ThemeContext.Provider>

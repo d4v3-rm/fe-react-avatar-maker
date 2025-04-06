@@ -65,7 +65,7 @@ export const TechItem = styled.div`
   transition: background-color 0.2s;
   
   &:hover {
-    background-color: ${({ theme }) => theme.colors.background.hover};
+    background-color: ${({ theme }) => theme.colors.components.button.ghost.hover};
   }
 `;
 

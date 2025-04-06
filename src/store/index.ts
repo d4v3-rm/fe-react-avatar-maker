@@ -1,12 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import themeReducer from './slices/themeSlice';
-import userReducer from './slices/userSlice';
 import avatarReducer from './slices/avatarSlice';
 
 export const store = configureStore({
   reducer: {
     theme: themeReducer,
-    user: userReducer,
     avatar: avatarReducer,
   },
   devTools: import.meta.env.MODE !== 'prod',

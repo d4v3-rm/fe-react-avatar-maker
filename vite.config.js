@@ -34,9 +34,12 @@ export default defineConfig(function (_a) {
             cors: true,
         },
         define: __assign({ 
-            // Expose all env variables to client
+            // Expose env variables to client, filtering out those with invalid JS identifier characters
             'import.meta.env.MODE': JSON.stringify(mode) }, Object.keys(env).reduce(function (acc, key) {
-            acc["import.meta.env.".concat(key)] = JSON.stringify(env[key]);
+            // Skip env vars with invalid identifier characters (like parentheses)
+            if (/^[a-zA-Z_$][a-zA-Z0-9_$]*$/.test(key)) {
+                acc["import.meta.env.".concat(key)] = JSON.stringify(env[key]);
+            }
             return acc;
         }, {})),
         build: {

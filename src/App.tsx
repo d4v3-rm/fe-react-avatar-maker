@@ -6,7 +6,6 @@ import { Provider } from 'react-redux';
 import { store } from '@/store';
 import { HelmetProvider } from 'react-helmet-async';
 import MainLayout from '@/layouts/MainLayout';
-import HomePage from '@/pages/HomePage';
 import AboutPage from '@/pages/AboutPage';
 import NotFoundPage from '@/pages/NotFoundPage';
 import AvatarMakerPage from '@/pages/AvatarMakerPage';
