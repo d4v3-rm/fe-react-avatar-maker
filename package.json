@@ -1,68 +1,27 @@
 {
   "name": "fe-react-avatar-maker",
-  "version": "4.1.12",
-  "license": "MIT",
-  "description": "A customizable avatar creation tool that allows users to generate and download unique avatars with multilingual support",
-  "keywords": [
-    "React",
-    "Avatar",
-    "styled-components",
-    "TypeScript",
-    "Frontend",
-    "Vite",
-    "Multilingual",
-    "i18n",
-    "Dicebear",
-    "Customizable"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/5h1ngy/fe-react-avatar-maker.git"
-  },
-  "author": "5h1ngy <5h1ngy@example.com>",
-  "engines": {
-    "node": ">=20.0.0",
-    "npm": ">=9.0.0"
-  },
+  "private": true,
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start:dev": "vite --mode dev --open /fe-react-avatar-maker",
-    "build:prod": "tsc -b && vite build --mode prod --outDir dist",
-    "preview:prod": "vite preview --mode prod --outDir dist --open /fe-react-avatar-maker",
-    "clean": "rimraf dist node_modules",
-    "docker:build": "docker build -t fe-react-avatar-maker:latest .",
-    "docker:run": "docker run -p 8080:80 fe-react-avatar-maker:latest"
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@dicebear/collection": "^9.2.2",
     "@dicebear/core": "^9.2.2",
-    "@reduxjs/toolkit": "^2.0.1",
-    "axios": "^1.6.2",
-    "lodash": "^4.17.21",
+    "@reduxjs/toolkit": "^2.2.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet-async": "^2.0.3",
-    "react-icons": "^4.12.0",
-    "react-redux": "^9.0.4",
-    "react-router-dom": "^6.20.1",
-    "styled-components": "^6.1.1"
+    "react-redux": "^9.1.2"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.202",
-    "@types/node": "^20.10.4",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
-    "axios-mock-adapter": "^1.22.0",
-    "dotenv": "^16.3.1",
-    "i18next": "^24.2.3",
-    "i18next-browser-languagedetector": "^8.0.4",
-    "i18next-http-backend": "^3.0.2",
-    "react-i18next": "^15.4.1",
-    "rimraf": "^5.0.5",
+    "sass": "^1.77.8",
     "typescript": "^5.3.3",
-    "vite": "^5.0.8",
-    "vite-tsconfig-paths": "^4.2.1"
-  },
-  "packageManager": "yarn@4.8.1"
+    "vite": "^5.0.8"
+  }
 }
