@@ -1,0 +1,118 @@
+{
+  "app": {
+    "title": "Creador de Avatares",
+    "subtitle": "Crea tu avatar con interacciones suaves y controles limpios."
+  },
+  "preview": {
+    "title": "Vista previa"
+  },
+  "controls": {
+    "title": "Personalizar",
+    "labels": {
+      "skinColor": "Color de piel",
+      "hairColor": "Color de cabello",
+      "facialHairColor": "Color de barba",
+      "clothesColor": "Color de ropa",
+      "hairStyle": "Peinado",
+      "facialHair": "Barba y bigote",
+      "eyes": "Ojos",
+      "eyebrows": "Cejas",
+      "mouth": "Boca",
+      "clothes": "Ropa",
+      "accessories": "Accesorios"
+    }
+  },
+  "actions": {
+    "downloadSvg": "Descargar SVG",
+    "reset": "Restablecer"
+  },
+  "language": {
+    "label": "Idioma",
+    "options": {
+      "it": "Italiano",
+      "en": "English",
+      "es": "Español",
+      "fr": "Français"
+    }
+  },
+  "download": {
+    "filePrefix": "avatar"
+  },
+  "options": {
+    "common": {
+      "none": "Ninguno"
+    },
+    "colors": {
+      "light": "Claro",
+      "lightMedium": "Claro medio",
+      "medium": "Medio",
+      "darkMedium": "Medio oscuro",
+      "dark": "Oscuro",
+      "black": "Negro",
+      "darkBrown": "Marrón oscuro",
+      "brown": "Marrón",
+      "blonde": "Rubio",
+      "platinum": "Platino",
+      "whiteGray": "Blanco / Gris",
+      "navyBlue": "Azul marino",
+      "skyBlue": "Celeste",
+      "blue": "Azul",
+      "red": "Rojo",
+      "lightGreen": "Verde claro",
+      "yellow": "Amarillo",
+      "white": "Blanco"
+    },
+    "top": {
+      "shortWaved": "Corto ondulado",
+      "longButNotTooLong": "Largo",
+      "curly": "Rizado",
+      "bob": "Bob",
+      "bun": "Moño",
+      "theCaesar": "Corte César",
+      "hat": "Sombrero",
+      "hijab": "Hiyab",
+      "turban": "Turbante"
+    },
+    "facialHair": {
+      "beardLight": "Barba ligera",
+      "beardMedium": "Barba media",
+      "moustacheFancy": "Bigote"
+    },
+    "clothes": {
+      "shirtCrewNeck": "Camiseta cuello redondo",
+      "shirtVNeck": "Camiseta cuello V",
+      "hoodie": "Sudadera",
+      "overall": "Peto",
+      "blazerAndShirt": "Blazer y camisa"
+    },
+    "eyes": {
+      "default": "Por defecto",
+      "happy": "Felices",
+      "wink": "Guiño",
+      "surprised": "Sorprendidos",
+      "eyeRoll": "Ojos en blanco",
+      "xDizzy": "Mareados"
+    },
+    "eyebrows": {
+      "default": "Por defecto",
+      "raisedExcited": "Levantadas",
+      "sadConcerned": "Tristes",
+      "angry": "Enfadadas",
+      "upDown": "Arriba y abajo"
+    },
+    "mouth": {
+      "smile": "Sonrisa",
+      "default": "Por defecto",
+      "serious": "Seria",
+      "twinkle": "Brillo",
+      "tongue": "Lengua",
+      "sad": "Triste"
+    },
+    "accessories": {
+      "round": "Gafas redondas",
+      "sunglasses": "Gafas de sol",
+      "wayfarers": "Wayfarers",
+      "eyepatch": "Parche en el ojo"
+    }
+  }
+}

@@ -18,7 +18,7 @@ export function AvatarStudio({
   onDownload,
 }: AvatarStudioProps) {
   return (
-    <section className="app__grid">
+    <section className="app__grid js-reveal">
       <AvatarPreview svg={avatarSvg} />
       <AvatarControls
         options={options}

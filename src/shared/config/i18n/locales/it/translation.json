@@ -1,0 +1,118 @@
+{
+  "app": {
+    "title": "Avatar Maker",
+    "subtitle": "Crea il tuo avatar con interazioni fluide e controlli puliti."
+  },
+  "preview": {
+    "title": "Anteprima"
+  },
+  "controls": {
+    "title": "Personalizza",
+    "labels": {
+      "skinColor": "Colore pelle",
+      "hairColor": "Colore capelli",
+      "facialHairColor": "Colore barba",
+      "clothesColor": "Colore vestiti",
+      "hairStyle": "Stile capelli",
+      "facialHair": "Barba e baffi",
+      "eyes": "Occhi",
+      "eyebrows": "Sopracciglia",
+      "mouth": "Bocca",
+      "clothes": "Vestiti",
+      "accessories": "Accessori"
+    }
+  },
+  "actions": {
+    "downloadSvg": "Scarica SVG",
+    "reset": "Reimposta"
+  },
+  "language": {
+    "label": "Lingua",
+    "options": {
+      "it": "Italiano",
+      "en": "English",
+      "es": "Español",
+      "fr": "Français"
+    }
+  },
+  "download": {
+    "filePrefix": "avatar"
+  },
+  "options": {
+    "common": {
+      "none": "Nessuno"
+    },
+    "colors": {
+      "light": "Chiaro",
+      "lightMedium": "Chiaro medio",
+      "medium": "Medio",
+      "darkMedium": "Medio scuro",
+      "dark": "Scuro",
+      "black": "Nero",
+      "darkBrown": "Marrone scuro",
+      "brown": "Marrone",
+      "blonde": "Biondo",
+      "platinum": "Platino",
+      "whiteGray": "Bianco / Grigio",
+      "navyBlue": "Blu navy",
+      "skyBlue": "Azzurro",
+      "blue": "Blu",
+      "red": "Rosso",
+      "lightGreen": "Verde chiaro",
+      "yellow": "Giallo",
+      "white": "Bianco"
+    },
+    "top": {
+      "shortWaved": "Corto mosso",
+      "longButNotTooLong": "Lungo",
+      "curly": "Riccio",
+      "bob": "Caschetto",
+      "bun": "Chignon",
+      "theCaesar": "Taglio Caesar",
+      "hat": "Cappello",
+      "hijab": "Hijab",
+      "turban": "Turbante"
+    },
+    "facialHair": {
+      "beardLight": "Barba leggera",
+      "beardMedium": "Barba media",
+      "moustacheFancy": "Baffi"
+    },
+    "clothes": {
+      "shirtCrewNeck": "Maglietta girocollo",
+      "shirtVNeck": "Maglietta scollo V",
+      "hoodie": "Felpa",
+      "overall": "Salopette",
+      "blazerAndShirt": "Blazer e camicia"
+    },
+    "eyes": {
+      "default": "Classici",
+      "happy": "Felici",
+      "wink": "Occhiolino",
+      "surprised": "Sorpresi",
+      "eyeRoll": "Occhi al cielo",
+      "xDizzy": "Storditi"
+    },
+    "eyebrows": {
+      "default": "Classiche",
+      "raisedExcited": "Alzate",
+      "sadConcerned": "Tristi",
+      "angry": "Arrabbiate",
+      "upDown": "Asimmetriche"
+    },
+    "mouth": {
+      "smile": "Sorriso",
+      "default": "Classica",
+      "serious": "Seria",
+      "twinkle": "Sbrilluccico",
+      "tongue": "Linguaccia",
+      "sad": "Triste"
+    },
+    "accessories": {
+      "round": "Occhiali tondi",
+      "sunglasses": "Occhiali da sole",
+      "wayfarers": "Wayfarer",
+      "eyepatch": "Benda sull'occhio"
+    }
+  }
+}

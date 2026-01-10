@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   buildAvatarSvg,
   resetOptions,
@@ -11,6 +12,7 @@ import { downloadSvgFile } from '../shared/lib';
 import { useAppDispatch, useAppSelector } from './providers';
 
 function App() {
+  const { t } = useTranslation();
   const dispatch = useAppDispatch();
   const options = useAppSelector(selectAvatarOptions);
   const avatarSvg = useMemo(() => buildAvatarSvg(options), [options]);
@@ -24,7 +26,8 @@ function App() {
   };
 
   const handleDownload = () => {
-    downloadSvgFile(avatarSvg, `avatar-${Date.now()}.svg`);
+    const prefix = t('download.filePrefix');
+    downloadSvgFile(avatarSvg, `${prefix}-${Date.now()}.svg`);
   };
 
   return (

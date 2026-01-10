@@ -1,0 +1,118 @@
+{
+  "app": {
+    "title": "Créateur d'avatar",
+    "subtitle": "Créez votre avatar avec des interactions fluides et des contrôles clairs."
+  },
+  "preview": {
+    "title": "Aperçu"
+  },
+  "controls": {
+    "title": "Personnaliser",
+    "labels": {
+      "skinColor": "Couleur de peau",
+      "hairColor": "Couleur des cheveux",
+      "facialHairColor": "Couleur de barbe",
+      "clothesColor": "Couleur des vêtements",
+      "hairStyle": "Coiffure",
+      "facialHair": "Barbe et moustache",
+      "eyes": "Yeux",
+      "eyebrows": "Sourcils",
+      "mouth": "Bouche",
+      "clothes": "Vêtements",
+      "accessories": "Accessoires"
+    }
+  },
+  "actions": {
+    "downloadSvg": "Télécharger le SVG",
+    "reset": "Réinitialiser"
+  },
+  "language": {
+    "label": "Langue",
+    "options": {
+      "it": "Italiano",
+      "en": "English",
+      "es": "Español",
+      "fr": "Français"
+    }
+  },
+  "download": {
+    "filePrefix": "avatar"
+  },
+  "options": {
+    "common": {
+      "none": "Aucun"
+    },
+    "colors": {
+      "light": "Clair",
+      "lightMedium": "Clair moyen",
+      "medium": "Moyen",
+      "darkMedium": "Moyen foncé",
+      "dark": "Foncé",
+      "black": "Noir",
+      "darkBrown": "Brun foncé",
+      "brown": "Brun",
+      "blonde": "Blond",
+      "platinum": "Platine",
+      "whiteGray": "Blanc / Gris",
+      "navyBlue": "Bleu marine",
+      "skyBlue": "Bleu ciel",
+      "blue": "Bleu",
+      "red": "Rouge",
+      "lightGreen": "Vert clair",
+      "yellow": "Jaune",
+      "white": "Blanc"
+    },
+    "top": {
+      "shortWaved": "Court ondulé",
+      "longButNotTooLong": "Long",
+      "curly": "Bouclé",
+      "bob": "Carré",
+      "bun": "Chignon",
+      "theCaesar": "Coupe César",
+      "hat": "Chapeau",
+      "hijab": "Hijab",
+      "turban": "Turban"
+    },
+    "facialHair": {
+      "beardLight": "Barbe légère",
+      "beardMedium": "Barbe moyenne",
+      "moustacheFancy": "Moustache"
+    },
+    "clothes": {
+      "shirtCrewNeck": "T-shirt col rond",
+      "shirtVNeck": "T-shirt col V",
+      "hoodie": "Sweat à capuche",
+      "overall": "Salopette",
+      "blazerAndShirt": "Blazer et chemise"
+    },
+    "eyes": {
+      "default": "Par défaut",
+      "happy": "Heureux",
+      "wink": "Clin d'œil",
+      "surprised": "Surpris",
+      "eyeRoll": "Yeux au ciel",
+      "xDizzy": "Étourdi"
+    },
+    "eyebrows": {
+      "default": "Par défaut",
+      "raisedExcited": "Relevés",
+      "sadConcerned": "Tristes",
+      "angry": "En colère",
+      "upDown": "Asymétriques"
+    },
+    "mouth": {
+      "smile": "Sourire",
+      "default": "Par défaut",
+      "serious": "Sérieuse",
+      "twinkle": "Étincelle",
+      "tongue": "Langue",
+      "sad": "Triste"
+    },
+    "accessories": {
+      "round": "Lunettes rondes",
+      "sunglasses": "Lunettes de soleil",
+      "wayfarers": "Wayfarers",
+      "eyepatch": "Cache-œil"
+    }
+  }
+}

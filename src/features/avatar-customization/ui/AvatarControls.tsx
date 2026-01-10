@@ -1,5 +1,11 @@
+import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import type { AvatarOptions } from '../../../entities/avatar';
+import { useInteractiveMotion, useRevealAnimation } from '../../../shared/lib';
 import { COLOR_CONTROLS, SELECT_CONTROLS } from '../model/options';
+import { ColorControlGroup } from './ColorControlGroup';
+import { ControlActions } from './ControlActions';
+import { SelectControlGroup } from './SelectControlGroup';
 
 type AvatarControlsProps = {
   options: AvatarOptions;
@@ -9,60 +15,42 @@ type AvatarControlsProps = {
 };
 
 export function AvatarControls({ options, onChange, onReset, onDownload }: AvatarControlsProps) {
+  const { t } = useTranslation();
+  const sectionRef = useRef<HTMLElement>(null);
+  useRevealAnimation(sectionRef, '.control-group, .actions', {
+    y: 12,
+    stagger: 0.04,
+    duration: 0.45,
+  });
+  useInteractiveMotion(sectionRef, '.js-animated-target', { hoverScale: 1.03, pressScale: 0.985 });
+
   return (
-    <section className="panel controls-panel">
-      <h2 className="panel-title">Customize</h2>
+    <section className="panel controls-panel js-reveal" ref={sectionRef}>
+      <h2 className="panel-title">{t('controls.title')}</h2>
 
       {COLOR_CONTROLS.map((control) => (
-        <div className="control-group" key={control.key}>
-          <label className="control-label">{control.label}</label>
-          <div className="color-palette">
-            {control.options.map((item) => {
-              const selected = options[control.key] === item.value;
-
-              return (
-                <button
-                  key={item.value}
-                  className={`color-chip ${selected ? 'is-selected' : ''}`}
-                  type="button"
-                  onClick={() => onChange(control.key, item.value)}
-                  title={item.label}
-                  style={{ backgroundColor: `#${item.value}` }}
-                />
-              );
-            })}
-          </div>
-        </div>
+        <ColorControlGroup
+          key={control.key}
+          labelKey={control.labelKey}
+          optionKey={control.key}
+          options={control.options}
+          selectedValue={options[control.key]}
+          onChange={onChange}
+        />
       ))}
 
       {SELECT_CONTROLS.map((control) => (
-        <div className="control-group" key={control.key}>
-          <label className="control-label" htmlFor={control.key}>
-            {control.label}
-          </label>
-          <select
-            id={control.key}
-            className="control-select"
-            value={options[control.key]}
-            onChange={(event) => onChange(control.key, event.target.value)}
-          >
-            {control.options.map((item) => (
-              <option key={item.value} value={item.value}>
-                {item.label}
-              </option>
-            ))}
-          </select>
-        </div>
+        <SelectControlGroup
+          key={control.key}
+          labelKey={control.labelKey}
+          optionKey={control.key}
+          options={control.options}
+          selectedValue={options[control.key]}
+          onChange={onChange}
+        />
       ))}
 
-      <div className="actions">
-        <button className="btn btn--primary" type="button" onClick={onDownload}>
-          Download SVG
-        </button>
-        <button className="btn btn--ghost" type="button" onClick={onReset}>
-          Reset
-        </button>
-      </div>
+      <ControlActions onDownload={onDownload} onReset={onReset} />
     </section>
   );
 }

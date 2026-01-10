@@ -14,5 +14,5 @@ export type AvatarOptions = {
 
 export type OptionItem = {
   value: string;
-  label: string;
+  labelKey: string;
 };
