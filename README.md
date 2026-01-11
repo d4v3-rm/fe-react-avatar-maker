@@ -1,18 +1,18 @@
 # 🎨 Avatar Maker
 
-> Create and customize an avatar with a clean UI, smooth GSAP animations, and a modular Feature-Sliced Design architecture.
+> Create and customize avatars with React, Redux Toolkit, i18n, GSAP, and a **simple modular structure**.
 
 ## ✨ Overview
 
-`fe-react-avatar-maker` is a React + TypeScript app for building avatars with DiceBear (`avataaars` style).
+`fe-react-avatar-maker` is a frontend project built with:
 
-The project is intentionally structured to stay maintainable over time:
+- ⚛️ React + TypeScript + Vite
+- 🧠 Redux Toolkit for state management
+- 🌍 i18next / react-i18next for localization (`it`, `en`, `es`, `fr`)
+- 🎞️ GSAP for smooth UI interactions
+- 🎨 Sass split by component (no monolithic stylesheet)
 
-- 🧩 **Feature-Sliced Design (FSD)** for scalable architecture
-- 🧠 **Redux Toolkit** for predictable state management
-- 🎞️ **GSAP** for smooth and reusable UI animations
-- 🎯 **Sass (SCSS)** for simple, clean styling (no visual gradients)
-- 🧹 **ESLint + Prettier** for code quality and consistency
+The current architecture is intentionally lightweight and easier to maintain than a layered enterprise scaffold.
 
 ---
 
@@ -22,9 +22,10 @@ The project is intentionally structured to stay maintainable over time:
 | ------------- | ---------------------------------------- |
 | Frontend      | React 18, TypeScript, Vite               |
 | State         | Redux Toolkit, React Redux               |
-| Avatar Engine | DiceBear Core + Collection (`avataaars`) |
-| Animations    | GSAP                                     |
-| Styling       | Sass (SCSS)                              |
+| Avatar engine | DiceBear Core + Collection (`avataaars`) |
+| Localization  | i18next, react-i18next                   |
+| Motion        | GSAP                                     |
+| Styling       | Sass (component-level)                   |
 | Quality       | ESLint, Prettier                         |
 
 ---
@@ -37,7 +38,7 @@ The project is intentionally structured to stay maintainable over time:
 npm install
 ```
 
-### 2. Start development server
+### 2. Run in development
 
 ```bash
 npm run dev
@@ -57,82 +58,107 @@ npm run preview
 
 ---
 
-## 📜 Available Scripts
+## 📜 Scripts
 
-| Command                | Description                      |
-| ---------------------- | -------------------------------- |
-| `npm run dev`          | Start local Vite dev server      |
-| `npm run build`        | Type-check + production build    |
-| `npm run preview`      | Preview production bundle        |
-| `npm run lint`         | Run ESLint                       |
-| `npm run lint:fix`     | Run ESLint with auto-fix         |
-| `npm run format`       | Format code with Prettier        |
-| `npm run format:check` | Check formatting without changes |
+| Command                | Description                   |
+| ---------------------- | ----------------------------- |
+| `npm run dev`          | Start Vite dev server         |
+| `npm run build`        | Type-check + production build |
+| `npm run preview`      | Preview production build      |
+| `npm run lint`         | Run ESLint                    |
+| `npm run lint:fix`     | Fix lint issues automatically |
+| `npm run format`       | Format with Prettier          |
+| `npm run format:check` | Check formatting              |
 
 ---
 
-## 🧱 Project Architecture (FSD)
+## 🧱 Simplified Project Structure
 
 ```text
 src/
-  app/        # app bootstrap, providers, global styles
-  pages/      # page-level composition
-  widgets/    # bigger UI blocks composed from features/entities
-  features/   # user actions and interactions
-  entities/   # core business/domain models (avatar)
-  shared/     # reusable libs/utilities/hooks
+  App.tsx
+  main.tsx
+
+  components/
+    AvatarPage/
+    AvatarPreview/
+    AvatarControls/
+    LanguageSwitcher/
+
+  domain/
+    avatar/
+      buildAvatar.ts
+      avatarDefaults.ts
+      avatar.types.ts
+      options/
+
+  store/
+    index.ts
+    hooks.ts
+    avatar/
+
+  i18n/
+    i18n.ts
+    locales/
+
+  hooks/
+    useRevealAnimation.ts
+    useInteractiveMotion.ts
+    usePulseOnChange.ts
+    useMotionSafe.ts
+
+  styles/
+    globals.scss
 ```
 
-### Key modules
+### Why this structure?
 
-- `entities/avatar`:
-  - avatar model, Redux slice/selectors
-  - avatar SVG generator (`buildAvatarSvg`)
-  - avatar preview UI
-- `features/avatar-customization`:
-  - customization form controls
-  - split UI components (`ColorControlGroup`, `SelectControlGroup`, `ControlActions`)
-- `shared/lib/animations`:
-  - reusable GSAP hooks:
-    - `useRevealAnimation`
-    - `useInteractiveMotion`
-    - `usePulseOnChange`
+- ✅ Clear separation by purpose (components, domain, store, i18n, hooks)
+- ✅ Easy navigation and onboarding
+- ✅ Keeps files small and focused
+- ✅ Avoids monolithic components and monolithic styles
 
 ---
 
-## 🎯 UX Notes
+## 🧩 Types Convention
 
-- Rounded, soft UI elements for a modern visual feel
-- Simple color palette (no gradients) for clarity
-- Smooth interactions with GSAP:
-  - page reveal animation
-  - interactive hover/press motion
-  - preview pulse on avatar change
-- Motion-safe behavior respecting `prefers-reduced-motion`
+Types are split into dedicated `*.types.ts` files, for example:
+
+- `src/components/AvatarControls/AvatarControls.types.ts`
+- `src/domain/avatar/avatar.types.ts`
+- `src/store/avatar/avatar.types.ts`
 
 ---
 
-## 🔄 Avatar Flow
+## 🎨 Styling Convention
 
-1. User changes options (hair, eyes, clothes, colors, etc.)
-2. Redux state updates through `updateOption`
-3. SVG is regenerated with DiceBear
-4. Preview animates subtly on update
-5. User can download the final SVG
+- Global tokens and base rules are in `src/styles/globals.scss`
+- Each component has its own `.scss` file next to the component
+- No single massive style file for the whole app
 
 ---
 
-## 📦 License
+## 🌍 Supported Languages
 
-This project is licensed under the MIT License.  
-See [`LICENSE`](LICENSE) for details.
+The app is localized only in:
+
+- 🇮🇹 Italiano (`it`)
+- 🇬🇧 English (`en`)
+- 🇪🇸 Español (`es`)
+- 🇫🇷 Français (`fr`)
+
+Translations live in:
+
+```text
+src/i18n/locales/en.json
+src/i18n/locales/it.json
+src/i18n/locales/es.json
+src/i18n/locales/fr.json
+```
 
 ---
 
-## 🙌 Contributing
+## 📄 License
 
-Contributions are welcome.
-
-- Keep architecture aligned with FSD
-- Prefer small, composable components
-- Run lint/format/build before opening a PR
+MIT License.  
+See [`LICENSE`](LICENSE).
