@@ -1,0 +1,32 @@
+:root {
+  --color-bg: #f2f4f7;
+  --color-panel: #ffffff;
+  --color-surface: #eef1f6;
+  --color-text: #1f2937;
+  --color-muted: #5f6b7a;
+  --color-border: #d9e0ea;
+  --color-primary: #2563eb;
+  --color-primary-soft: #dbeafe;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Manrope', 'Avenir Next', 'Segoe UI', sans-serif;
+}
+
+.surface-card {
+  background: var(--color-panel);
+  border: 1px solid var(--color-border);
+  border-radius: 22px;
+  padding: 1.1rem;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+  transition:
+    transform 0.26s ease,
+    box-shadow 0.26s ease;
+}

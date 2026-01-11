@@ -1,0 +1,47 @@
+.avatar-page {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 2.4rem 1rem 3.2rem;
+}
+
+.avatar-page__header {
+  margin-bottom: 1.7rem;
+}
+
+.avatar-page__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.avatar-page__title {
+  margin: 0;
+  letter-spacing: -0.03em;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.avatar-page__subtitle {
+  margin: 0.65rem 0 0;
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 1rem;
+}
+
+.avatar-page__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(290px, 360px) 1fr;
+  align-items: start;
+}
+
+@media (max-width: 920px) {
+  .avatar-page__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .avatar-page__grid {
+    grid-template-columns: 1fr;
+  }
+}

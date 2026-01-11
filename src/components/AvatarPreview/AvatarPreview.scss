@@ -1,0 +1,27 @@
+.avatar-preview-card__title {
+  margin: 0 0 1.1rem;
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+}
+
+.avatar-preview-card__frame {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 18px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  transition: box-shadow 0.24s ease;
+}
+
+.avatar-preview-card__frame:hover,
+.avatar-preview-card__frame:focus-within {
+  box-shadow: 0 0 0 3px var(--color-primary-soft);
+}
+
+.avatar-preview-card__frame svg {
+  width: 100%;
+  height: 100%;
+}
