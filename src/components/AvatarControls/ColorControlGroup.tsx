@@ -10,10 +10,15 @@ export function ColorControlGroup({
 }: ColorControlGroupProps) {
   const { t } = useTranslation();
   const groupLabel = t(labelKey);
+  const selectedOption = options.find((option) => option.value === selectedValue);
+  const selectedLabel = selectedOption ? t(selectedOption.labelKey) : t('options.common.none');
 
   return (
     <div className="avatar-controls__group">
-      <p className="avatar-controls__label">{groupLabel}</p>
+      <div className="avatar-controls__group-head">
+        <p className="avatar-controls__label">{groupLabel}</p>
+        <span className="avatar-controls__value">{selectedLabel}</span>
+      </div>
       <div className="avatar-controls__colors">
         {options.map((option) => {
           const isSelected = selectedValue === option.value;
