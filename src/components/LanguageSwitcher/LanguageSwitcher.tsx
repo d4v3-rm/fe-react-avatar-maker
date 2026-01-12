@@ -20,21 +20,25 @@ export function LanguageSwitcher(props: LanguageSwitcherProps) {
 
   return (
     <div className="language-switcher">
-      <label className="language-switcher__label" htmlFor="language-switcher">
-        {t('language.label')}
-      </label>
-      <select
-        id="language-switcher"
-        className="language-switcher__select"
-        value={activeLanguage}
-        onChange={(event) => handleLanguageChange(event.target.value)}
-      >
-        {SUPPORTED_LANGUAGES.map((language) => (
-          <option key={language} value={language}>
-            {t(`language.options.${language}`)}
-          </option>
-        ))}
-      </select>
+      <span className="language-switcher__label">{t('language.label')}</span>
+      <div className="language-switcher__list" role="group" aria-label={t('language.label')}>
+        {SUPPORTED_LANGUAGES.map((language) => {
+          const isActive = activeLanguage === language;
+
+          return (
+            <button
+              key={language}
+              type="button"
+              className={`language-switcher__button js-page-interactive ${isActive ? 'is-active' : ''}`}
+              onClick={() => handleLanguageChange(language)}
+              aria-pressed={isActive}
+              title={t(`language.options.${language}`)}
+            >
+              {language.toUpperCase()}
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }
