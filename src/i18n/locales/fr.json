@@ -1,10 +1,20 @@
 {
   "app": {
-    "title": "Créateur d'avatar",
-    "subtitle": "Créez votre avatar avec des interactions fluides et des contrôles clairs."
+    "title": "Createur d'avatar",
+    "subtitle": "Concevez votre avatar dans un espace editorial avec des controles fluides et precis.",
+    "kicker": "Creative Studio"
   },
   "preview": {
-    "title": "Aperçu"
+    "title": "Apercu",
+    "subtitle": "Panneau live",
+    "liveBadge": "Live",
+    "traitsTitle": "Traits actifs",
+    "metrics": {
+      "title": "Indicateurs d'apercu",
+      "uniqueColors": "Couleurs",
+      "activeFeatures": "Traits",
+      "format": "Format"
+    }
   },
   "controls": {
     "title": "Personnaliser",
@@ -20,23 +30,36 @@
       "mouth": "Bouche",
       "clothes": "Vêtements",
       "accessories": "Accessoires"
+    },
+    "helper": "Ajustez les couleurs et les traits du visage. Les modifications sont instantanees.",
+    "sections": {
+      "colors": "Palette",
+      "features": "Traits",
+      "export": "Exporter"
     }
   },
   "actions": {
     "downloadSvg": "Télécharger le SVG",
-    "reset": "Réinitialiser"
+    "reset": "Réinitialiser",
+    "hint": "Exportez votre avatar en SVG ou recommencez.",
+    "exportTitle": "Exporter Avatar",
+    "exportSubtitle": "Telechargez le SVG ou reinitialisez la composition actuelle."
   },
   "language": {
     "label": "Langue",
     "options": {
       "it": "Italiano",
       "en": "English",
-      "es": "Español",
-      "fr": "Français"
+      "es": "Espanol",
+      "fr": "Francais"
     }
   },
   "download": {
     "filePrefix": "avatar"
+  },
+  "loader": {
+    "text": "Chargement...",
+    "kicker": "Avatar Studio"
   },
   "options": {
     "common": {

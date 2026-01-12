@@ -1,13 +1,29 @@
 {
   "app": {
     "title": "Creador de Avatares",
-    "subtitle": "Crea tu avatar con interacciones suaves y controles limpios."
+    "kicker": "Creative Studio",
+    "subtitle": "Disena tu avatar en un espacio editorial con controles fluidos y precisos."
   },
   "preview": {
-    "title": "Vista previa"
+    "title": "Vista previa",
+    "subtitle": "Tablero en vivo",
+    "liveBadge": "Live",
+    "traitsTitle": "Rasgos activos",
+    "metrics": {
+      "title": "Metricas de vista previa",
+      "uniqueColors": "Colores",
+      "activeFeatures": "Rasgos",
+      "format": "Formato"
+    }
   },
   "controls": {
     "title": "Personalizar",
+    "helper": "Ajusta colores y rasgos faciales. Los cambios se aplican al instante.",
+    "sections": {
+      "colors": "Paleta",
+      "features": "Rasgos",
+      "export": "Exportar"
+    },
     "labels": {
       "skinColor": "Color de piel",
       "hairColor": "Color de cabello",
@@ -24,19 +40,26 @@
   },
   "actions": {
     "downloadSvg": "Descargar SVG",
-    "reset": "Restablecer"
+    "reset": "Restablecer",
+    "hint": "Exporta tu avatar en SVG o vuelve a empezar.",
+    "exportTitle": "Exportar Avatar",
+    "exportSubtitle": "Descarga el SVG o reinicia la composicion actual."
   },
   "language": {
     "label": "Idioma",
     "options": {
       "it": "Italiano",
       "en": "English",
-      "es": "Español",
-      "fr": "Français"
+      "es": "Espanol",
+      "fr": "Francais"
     }
   },
   "download": {
     "filePrefix": "avatar"
+  },
+  "loader": {
+    "kicker": "Avatar Studio",
+    "text": "Cargando..."
   },
   "options": {
     "common": {

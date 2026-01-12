@@ -1,13 +1,29 @@
 {
   "app": {
     "title": "Avatar Maker",
-    "subtitle": "Build your avatar with smooth interactions and clean controls."
+    "kicker": "Creative Studio",
+    "subtitle": "Design your avatar in an editorial-style workspace with smooth and focused controls."
   },
   "preview": {
-    "title": "Preview"
+    "title": "Preview",
+    "subtitle": "Live board",
+    "liveBadge": "Live",
+    "traitsTitle": "Current traits",
+    "metrics": {
+      "title": "Preview metrics",
+      "uniqueColors": "Colors",
+      "activeFeatures": "Features",
+      "format": "Format"
+    }
   },
   "controls": {
     "title": "Customize",
+    "helper": "Tune colors and facial traits. Changes are applied instantly.",
+    "sections": {
+      "colors": "Palette",
+      "features": "Features",
+      "export": "Export"
+    },
     "labels": {
       "skinColor": "Skin Color",
       "hairColor": "Hair Color",
@@ -24,19 +40,26 @@
   },
   "actions": {
     "downloadSvg": "Download SVG",
-    "reset": "Reset"
+    "reset": "Reset",
+    "hint": "Export your avatar as a clean SVG file or start over.",
+    "exportTitle": "Export Avatar",
+    "exportSubtitle": "Download your SVG or reset the current composition."
   },
   "language": {
     "label": "Language",
     "options": {
       "it": "Italiano",
       "en": "English",
-      "es": "Español",
-      "fr": "Français"
+      "es": "Espanol",
+      "fr": "Francais"
     }
   },
   "download": {
     "filePrefix": "avatar"
+  },
+  "loader": {
+    "kicker": "Avatar Studio",
+    "text": "Loading..."
   },
   "options": {
     "common": {

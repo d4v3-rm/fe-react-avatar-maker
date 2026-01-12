@@ -1,13 +1,29 @@
 {
   "app": {
     "title": "Avatar Maker",
-    "subtitle": "Crea il tuo avatar con interazioni fluide e controlli puliti."
+    "kicker": "Creative Studio",
+    "subtitle": "Progetta il tuo avatar in uno spazio editoriale con controlli fluidi e mirati."
   },
   "preview": {
-    "title": "Anteprima"
+    "title": "Anteprima",
+    "subtitle": "Bacheca live",
+    "liveBadge": "Live",
+    "traitsTitle": "Caratteristiche attive",
+    "metrics": {
+      "title": "Metriche anteprima",
+      "uniqueColors": "Colori",
+      "activeFeatures": "Elementi",
+      "format": "Formato"
+    }
   },
   "controls": {
     "title": "Personalizza",
+    "helper": "Regola palette e tratti del volto. Le modifiche sono immediate.",
+    "sections": {
+      "colors": "Palette",
+      "features": "Tratti",
+      "export": "Export"
+    },
     "labels": {
       "skinColor": "Colore pelle",
       "hairColor": "Colore capelli",
@@ -24,19 +40,26 @@
   },
   "actions": {
     "downloadSvg": "Scarica SVG",
-    "reset": "Reimposta"
+    "reset": "Reimposta",
+    "hint": "Esporta il tuo avatar in SVG oppure riparti da zero.",
+    "exportTitle": "Esporta Avatar",
+    "exportSubtitle": "Scarica il file SVG o reimposta la composizione corrente."
   },
   "language": {
     "label": "Lingua",
     "options": {
       "it": "Italiano",
       "en": "English",
-      "es": "Español",
-      "fr": "Français"
+      "es": "Espanol",
+      "fr": "Francais"
     }
   },
   "download": {
     "filePrefix": "avatar"
+  },
+  "loader": {
+    "kicker": "Avatar Studio",
+    "text": "Caricamento in corso..."
   },
   "options": {
     "common": {
