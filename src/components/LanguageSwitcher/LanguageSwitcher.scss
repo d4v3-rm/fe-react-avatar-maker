@@ -55,6 +55,30 @@
   color: var(--color-primary);
 }
 
+.language-switcher__button[data-lang='it'].is-active {
+  color: var(--color-accent-cyan);
+  border-color: rgba(87, 198, 255, 0.52);
+  background: rgba(87, 198, 255, 0.16);
+}
+
+.language-switcher__button[data-lang='en'].is-active {
+  color: var(--color-accent-violet);
+  border-color: rgba(177, 140, 255, 0.52);
+  background: rgba(177, 140, 255, 0.16);
+}
+
+.language-switcher__button[data-lang='es'].is-active {
+  color: var(--color-accent-amber);
+  border-color: rgba(255, 199, 104, 0.52);
+  background: rgba(255, 199, 104, 0.16);
+}
+
+.language-switcher__button[data-lang='fr'].is-active {
+  color: var(--color-accent-emerald);
+  border-color: rgba(127, 232, 194, 0.52);
+  background: rgba(127, 232, 194, 0.16);
+}
+
 @media (max-width: 920px) {
   .language-switcher {
     align-items: flex-start;

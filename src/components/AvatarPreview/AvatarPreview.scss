@@ -26,10 +26,10 @@
 }
 
 .avatar-preview-card__badge {
-  border: 1px solid var(--color-primary);
+  border: 1px solid rgba(127, 232, 194, 0.55);
   border-radius: 999px;
-  color: var(--color-primary);
-  background: rgba(87, 198, 255, 0.12);
+  color: var(--color-accent-emerald);
+  background: rgba(127, 232, 194, 0.16);
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -79,6 +79,18 @@
   text-align: center;
 }
 
+.avatar-preview-card__metric:nth-child(1) {
+  border-color: rgba(87, 198, 255, 0.45);
+}
+
+.avatar-preview-card__metric:nth-child(2) {
+  border-color: rgba(177, 140, 255, 0.45);
+}
+
+.avatar-preview-card__metric:nth-child(3) {
+  border-color: rgba(255, 199, 104, 0.45);
+}
+
 .avatar-preview-card__metric-value {
   display: block;
   font-family: 'Fraunces', 'Times New Roman', serif;
@@ -106,6 +118,14 @@
   border-radius: 12px;
   background: rgba(17, 25, 39, 0.62);
   padding: 0.55rem 0.65rem;
+}
+
+.avatar-preview-card__trait:nth-child(odd) {
+  border-color: rgba(177, 140, 255, 0.34);
+}
+
+.avatar-preview-card__trait:nth-child(even) {
+  border-color: rgba(87, 198, 255, 0.34);
 }
 
 .avatar-preview-card__trait-label {

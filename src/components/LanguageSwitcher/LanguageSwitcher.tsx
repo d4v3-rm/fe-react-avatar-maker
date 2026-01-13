@@ -29,6 +29,7 @@ export function LanguageSwitcher(props: LanguageSwitcherProps) {
             <button
               key={language}
               type="button"
+              data-lang={language}
               className={`language-switcher__button js-page-interactive ${isActive ? 'is-active' : ''}`}
               onClick={() => handleLanguageChange(language)}
               aria-pressed={isActive}

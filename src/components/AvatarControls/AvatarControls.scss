@@ -60,8 +60,24 @@
 
 .avatar-controls__tab.is-active {
   color: var(--color-text);
+}
+
+.avatar-controls__tab[data-avatar-tab='colors'].is-active {
+  color: var(--color-accent-cyan);
   border-color: rgba(87, 198, 255, 0.56);
   background: rgba(87, 198, 255, 0.18);
+}
+
+.avatar-controls__tab[data-avatar-tab='features'].is-active {
+  color: var(--color-accent-violet);
+  border-color: rgba(177, 140, 255, 0.56);
+  background: rgba(177, 140, 255, 0.18);
+}
+
+.avatar-controls__tab[data-avatar-tab='export'].is-active {
+  color: var(--color-accent-rose);
+  border-color: rgba(255, 127, 183, 0.56);
+  background: rgba(255, 127, 183, 0.18);
 }
 
 .avatar-controls__section {
@@ -117,11 +133,11 @@
 }
 
 .avatar-controls__value {
-  color: var(--color-primary);
+  color: var(--color-accent-emerald);
   font-size: 0.75rem;
   font-weight: 700;
-  border: 1px solid rgba(87, 198, 255, 0.38);
-  background: rgba(87, 198, 255, 0.12);
+  border: 1px solid rgba(127, 232, 194, 0.38);
+  background: rgba(127, 232, 194, 0.12);
   border-radius: 999px;
   padding: 0.1rem 0.45rem;
   white-space: nowrap;
@@ -220,13 +236,13 @@
 
 .avatar-controls__button--primary {
   color: #eef7ff;
-  background: rgba(75, 192, 255, 0.22);
-  border-color: rgba(75, 192, 255, 0.46);
+  background: rgba(255, 127, 183, 0.24);
+  border-color: rgba(255, 127, 183, 0.5);
 }
 
 .avatar-controls__button--primary:hover {
-  background: rgba(75, 192, 255, 0.32);
-  border-color: rgba(75, 192, 255, 0.62);
+  background: rgba(255, 127, 183, 0.34);
+  border-color: rgba(255, 127, 183, 0.66);
 }
 
 .avatar-controls__button--ghost {

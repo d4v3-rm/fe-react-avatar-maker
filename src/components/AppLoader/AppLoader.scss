@@ -44,18 +44,22 @@
 }
 
 .app-loader__bars span:nth-child(1) {
+  background: var(--color-accent-cyan);
   animation-delay: 0s;
 }
 
 .app-loader__bars span:nth-child(2) {
+  background: var(--color-accent-violet);
   animation-delay: 0.12s;
 }
 
 .app-loader__bars span:nth-child(3) {
+  background: var(--color-accent-rose);
   animation-delay: 0.24s;
 }
 
 .app-loader__bars span:nth-child(4) {
+  background: var(--color-accent-amber);
   animation-delay: 0.36s;
 }
 
