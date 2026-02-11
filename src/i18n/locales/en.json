@@ -1,0 +1,141 @@
+{
+  "app": {
+    "title": "Avatar Maker",
+    "kicker": "Creative Studio",
+    "subtitle": "Design your avatar in an editorial-style workspace with smooth and focused controls."
+  },
+  "preview": {
+    "title": "Preview",
+    "subtitle": "Live board",
+    "liveBadge": "Live",
+    "traitsTitle": "Current traits",
+    "metrics": {
+      "title": "Preview metrics",
+      "uniqueColors": "Colors",
+      "activeFeatures": "Features",
+      "format": "Format"
+    }
+  },
+  "controls": {
+    "title": "Customize",
+    "helper": "Tune colors and facial traits. Changes are applied instantly.",
+    "sections": {
+      "colors": "Palette",
+      "features": "Features",
+      "export": "Export"
+    },
+    "labels": {
+      "skinColor": "Skin Color",
+      "hairColor": "Hair Color",
+      "facialHairColor": "Facial Hair Color",
+      "clothesColor": "Clothes Color",
+      "hairStyle": "Hair Style",
+      "facialHair": "Facial Hair",
+      "eyes": "Eyes",
+      "eyebrows": "Eyebrows",
+      "mouth": "Mouth",
+      "clothes": "Clothes",
+      "accessories": "Accessories"
+    }
+  },
+  "actions": {
+    "downloadSvg": "Download SVG",
+    "reset": "Reset",
+    "hint": "Export your avatar as a clean SVG file or start over.",
+    "exportTitle": "Export Avatar",
+    "exportSubtitle": "Download your SVG or reset the current composition."
+  },
+  "language": {
+    "label": "Language",
+    "options": {
+      "it": "Italiano",
+      "en": "English",
+      "es": "Espanol",
+      "fr": "Francais"
+    }
+  },
+  "download": {
+    "filePrefix": "avatar"
+  },
+  "loader": {
+    "kicker": "Avatar Studio",
+    "text": "Loading..."
+  },
+  "options": {
+    "common": {
+      "none": "None"
+    },
+    "colors": {
+      "light": "Light",
+      "lightMedium": "Light Medium",
+      "medium": "Medium",
+      "darkMedium": "Dark Medium",
+      "dark": "Dark",
+      "black": "Black",
+      "darkBrown": "Dark Brown",
+      "brown": "Brown",
+      "blonde": "Blonde",
+      "platinum": "Platinum",
+      "whiteGray": "White / Gray",
+      "navyBlue": "Navy Blue",
+      "skyBlue": "Sky Blue",
+      "blue": "Blue",
+      "red": "Red",
+      "lightGreen": "Light Green",
+      "yellow": "Yellow",
+      "white": "White"
+    },
+    "top": {
+      "shortWaved": "Short Waved",
+      "longButNotTooLong": "Long",
+      "curly": "Curly",
+      "bob": "Bob",
+      "bun": "Bun",
+      "theCaesar": "Caesar",
+      "hat": "Hat",
+      "hijab": "Hijab",
+      "turban": "Turban"
+    },
+    "facialHair": {
+      "beardLight": "Beard Light",
+      "beardMedium": "Beard Medium",
+      "moustacheFancy": "Moustache"
+    },
+    "clothes": {
+      "shirtCrewNeck": "Shirt Crew Neck",
+      "shirtVNeck": "Shirt V Neck",
+      "hoodie": "Hoodie",
+      "overall": "Overall",
+      "blazerAndShirt": "Blazer and Shirt"
+    },
+    "eyes": {
+      "default": "Default",
+      "happy": "Happy",
+      "wink": "Wink",
+      "surprised": "Surprised",
+      "eyeRoll": "Eye Roll",
+      "xDizzy": "Dizzy"
+    },
+    "eyebrows": {
+      "default": "Default",
+      "raisedExcited": "Raised",
+      "sadConcerned": "Sad",
+      "angry": "Angry",
+      "upDown": "Up Down"
+    },
+    "mouth": {
+      "smile": "Smile",
+      "default": "Default",
+      "serious": "Serious",
+      "twinkle": "Twinkle",
+      "tongue": "Tongue",
+      "sad": "Sad"
+    },
+    "accessories": {
+      "round": "Round Glasses",
+      "sunglasses": "Sunglasses",
+      "wayfarers": "Wayfarers",
+      "eyepatch": "Eyepatch"
+    }
+  }
+}

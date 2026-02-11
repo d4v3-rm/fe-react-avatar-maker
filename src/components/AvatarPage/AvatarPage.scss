@@ -1,0 +1,67 @@
+.avatar-page {
+  min-height: 100vh;
+  padding: 1.4rem;
+}
+
+.avatar-page__shell {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.avatar-page__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.avatar-page__heading {
+  max-width: 740px;
+}
+
+.avatar-page__kicker {
+  margin: 0 0 0.5rem;
+  color: var(--color-accent-amber);
+  font-size: 0.84rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.avatar-page__title {
+  margin: 0;
+  font-size: clamp(2.05rem, 4.8vw, 3.1rem);
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.avatar-page__subtitle {
+  margin: 0.7rem 0 0;
+  color: var(--color-muted);
+  font-size: 0.99rem;
+  max-width: 56ch;
+}
+
+.avatar-page__workspace {
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: minmax(300px, 360px) minmax(0, 1fr);
+  align-items: start;
+}
+
+@media (max-width: 920px) {
+  .avatar-page {
+    padding: 0.85rem;
+  }
+
+  .avatar-page__header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .avatar-page__workspace {
+    grid-template-columns: 1fr;
+  }
+}

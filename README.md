@@ -1,50 +1,164 @@
-# React + TypeScript + Vite
+# 🎨 Avatar Maker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Create and customize avatars with React, Redux Toolkit, i18n, GSAP, and a **simple modular structure**.
 
-Currently, two official plugins are available:
+## ✨ Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`fe-react-avatar-maker` is a frontend project built with:
 
-## Expanding the ESLint configuration
+- ⚛️ React + TypeScript + Vite
+- 🧠 Redux Toolkit for state management
+- 🌍 i18next / react-i18next for localization (`it`, `en`, `es`, `fr`)
+- 🎞️ GSAP for smooth UI interactions
+- 🎨 Sass split by component (no monolithic stylesheet)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The current architecture is intentionally lightweight and easier to maintain than a layered enterprise scaffold.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Tech Stack
+
+| Area          | Tools                                    |
+| ------------- | ---------------------------------------- |
+| Frontend      | React 18, TypeScript, Vite               |
+| State         | Redux Toolkit, React Redux               |
+| Avatar engine | DiceBear Core + Collection (`avataaars`) |
+| Localization  | i18next, react-i18next                   |
+| Motion        | GSAP                                     |
+| Styling       | Sass (component-level)                   |
+| Quality       | ESLint, Prettier                         |
+
+---
+
+## 🚀 Quick Start
+
+### 1. Install dependencies
+
+```bash
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Run in development
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm run dev
 ```
+
+### 3. Build for production
+
+```bash
+npm run build
+```
+
+### 4. Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+## 📜 Scripts
+
+| Command                | Description                   |
+| ---------------------- | ----------------------------- |
+| `npm run dev`          | Start Vite dev server         |
+| `npm run build`        | Type-check + production build |
+| `npm run preview`      | Preview production build      |
+| `npm run lint`         | Run ESLint                    |
+| `npm run lint:fix`     | Fix lint issues automatically |
+| `npm run format`       | Format with Prettier          |
+| `npm run format:check` | Check formatting              |
+
+---
+
+## 🧱 Simplified Project Structure
+
+```text
+src/
+  App.tsx
+  main.tsx
+
+  components/
+    AvatarPage/
+    AvatarPreview/
+    AvatarControls/
+    LanguageSwitcher/
+
+  domain/
+    avatar/
+      buildAvatar.ts
+      avatarDefaults.ts
+      avatar.types.ts
+      options/
+
+  store/
+    index.ts
+    hooks.ts
+    avatar/
+
+  i18n/
+    i18n.ts
+    locales/
+
+  hooks/
+    useRevealAnimation.ts
+    useInteractiveMotion.ts
+    usePulseOnChange.ts
+    useMotionSafe.ts
+
+  styles/
+    globals.scss
+```
+
+### Why this structure?
+
+- ✅ Clear separation by purpose (components, domain, store, i18n, hooks)
+- ✅ Easy navigation and onboarding
+- ✅ Keeps files small and focused
+- ✅ Avoids monolithic components and monolithic styles
+
+---
+
+## 🧩 Types Convention
+
+Types are split into dedicated `*.types.ts` files, for example:
+
+- `src/components/AvatarControls/AvatarControls.types.ts`
+- `src/domain/avatar/avatar.types.ts`
+- `src/store/avatar/avatar.types.ts`
+
+---
+
+## 🎨 Styling Convention
+
+- Global tokens and base rules are in `src/styles/globals.scss`
+- Each component has its own `.scss` file next to the component
+- No single massive style file for the whole app
+
+---
+
+## 🌍 Supported Languages
+
+The app is localized only in:
+
+- 🇮🇹 Italiano (`it`)
+- 🇬🇧 English (`en`)
+- 🇪🇸 Español (`es`)
+- 🇫🇷 Français (`fr`)
+
+Translations live in:
+
+```text
+src/i18n/locales/en.json
+src/i18n/locales/it.json
+src/i18n/locales/es.json
+src/i18n/locales/fr.json
+```
+
+---
+
+## 📄 License
+
+MIT License.  
+See [`LICENSE`](LICENSE).

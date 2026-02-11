@@ -1,0 +1,141 @@
+{
+  "app": {
+    "title": "Creador de Avatares",
+    "kicker": "Creative Studio",
+    "subtitle": "Disena tu avatar en un espacio editorial con controles fluidos y precisos."
+  },
+  "preview": {
+    "title": "Vista previa",
+    "subtitle": "Tablero en vivo",
+    "liveBadge": "Live",
+    "traitsTitle": "Rasgos activos",
+    "metrics": {
+      "title": "Metricas de vista previa",
+      "uniqueColors": "Colores",
+      "activeFeatures": "Rasgos",
+      "format": "Formato"
+    }
+  },
+  "controls": {
+    "title": "Personalizar",
+    "helper": "Ajusta colores y rasgos faciales. Los cambios se aplican al instante.",
+    "sections": {
+      "colors": "Paleta",
+      "features": "Rasgos",
+      "export": "Exportar"
+    },
+    "labels": {
+      "skinColor": "Color de piel",
+      "hairColor": "Color de cabello",
+      "facialHairColor": "Color de barba",
+      "clothesColor": "Color de ropa",
+      "hairStyle": "Peinado",
+      "facialHair": "Barba y bigote",
+      "eyes": "Ojos",
+      "eyebrows": "Cejas",
+      "mouth": "Boca",
+      "clothes": "Ropa",
+      "accessories": "Accesorios"
+    }
+  },
+  "actions": {
+    "downloadSvg": "Descargar SVG",
+    "reset": "Restablecer",
+    "hint": "Exporta tu avatar en SVG o vuelve a empezar.",
+    "exportTitle": "Exportar Avatar",
+    "exportSubtitle": "Descarga el SVG o reinicia la composicion actual."
+  },
+  "language": {
+    "label": "Idioma",
+    "options": {
+      "it": "Italiano",
+      "en": "English",
+      "es": "Espanol",
+      "fr": "Francais"
+    }
+  },
+  "download": {
+    "filePrefix": "avatar"
+  },
+  "loader": {
+    "kicker": "Avatar Studio",
+    "text": "Cargando..."
+  },
+  "options": {
+    "common": {
+      "none": "Ninguno"
+    },
+    "colors": {
+      "light": "Claro",
+      "lightMedium": "Claro medio",
+      "medium": "Medio",
+      "darkMedium": "Medio oscuro",
+      "dark": "Oscuro",
+      "black": "Negro",
+      "darkBrown": "Marrón oscuro",
+      "brown": "Marrón",
+      "blonde": "Rubio",
+      "platinum": "Platino",
+      "whiteGray": "Blanco / Gris",
+      "navyBlue": "Azul marino",
+      "skyBlue": "Celeste",
+      "blue": "Azul",
+      "red": "Rojo",
+      "lightGreen": "Verde claro",
+      "yellow": "Amarillo",
+      "white": "Blanco"
+    },
+    "top": {
+      "shortWaved": "Corto ondulado",
+      "longButNotTooLong": "Largo",
+      "curly": "Rizado",
+      "bob": "Bob",
+      "bun": "Moño",
+      "theCaesar": "Corte César",
+      "hat": "Sombrero",
+      "hijab": "Hiyab",
+      "turban": "Turbante"
+    },
+    "facialHair": {
+      "beardLight": "Barba ligera",
+      "beardMedium": "Barba media",
+      "moustacheFancy": "Bigote"
+    },
+    "clothes": {
+      "shirtCrewNeck": "Camiseta cuello redondo",
+      "shirtVNeck": "Camiseta cuello V",
+      "hoodie": "Sudadera",
+      "overall": "Peto",
+      "blazerAndShirt": "Blazer y camisa"
+    },
+    "eyes": {
+      "default": "Por defecto",
+      "happy": "Felices",
+      "wink": "Guiño",
+      "surprised": "Sorprendidos",
+      "eyeRoll": "Ojos en blanco",
+      "xDizzy": "Mareados"
+    },
+    "eyebrows": {
+      "default": "Por defecto",
+      "raisedExcited": "Levantadas",
+      "sadConcerned": "Tristes",
+      "angry": "Enfadadas",
+      "upDown": "Arriba y abajo"
+    },
+    "mouth": {
+      "smile": "Sonrisa",
+      "default": "Por defecto",
+      "serious": "Seria",
+      "twinkle": "Brillo",
+      "tongue": "Lengua",
+      "sad": "Triste"
+    },
+    "accessories": {
+      "round": "Gafas redondas",
+      "sunglasses": "Gafas de sol",
+      "wayfarers": "Wayfarers",
+      "eyepatch": "Parche en el ojo"
+    }
+  }
+}
