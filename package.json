@@ -1,7 +1,22 @@
 {
   "name": "fe-react-avatar-maker",
+  "description": "Avatar maker web app built with React, TypeScript, Redux Toolkit, GSAP, and i18n.",
+  "keywords": [
+    "avatar",
+    "avatar-maker",
+    "react",
+    "typescript",
+    "vite",
+    "redux-toolkit",
+    "dicebear",
+    "i18n",
+    "sass",
+    "gsap",
+    "frontend"
+  ],
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://d4v3-rm.github.io/fe-react-avatar-maker/",
   "type": "module",
   "scripts": {
     "dev": "vite",

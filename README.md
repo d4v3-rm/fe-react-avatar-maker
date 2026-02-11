@@ -2,6 +2,10 @@
 
 > Create and customize avatars with React, Redux Toolkit, i18n, GSAP, and a **simple modular structure**.
 
+## Live Preview
+
+- https://d4v3-rm.github.io/fe-react-avatar-maker/
+
 ## ✨ Overview
 
 `fe-react-avatar-maker` is a frontend project built with:
@@ -55,6 +59,10 @@ npm run build
 ```bash
 npm run preview
 ```
+
+Live preview:
+
+- https://d4v3-rm.github.io/fe-react-avatar-maker/
 
 ---
 
