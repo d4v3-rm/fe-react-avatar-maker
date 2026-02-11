@@ -6,6 +6,8 @@
 
 - https://d4v3-rm.github.io/fe-react-avatar-maker/
 
+![Avatar Maker Preview](assets/preview.png)
+
 ## ✨ Overview
 
 `fe-react-avatar-maker` is a frontend project built with:
